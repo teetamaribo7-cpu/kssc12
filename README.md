@@ -1,6 +1,6 @@
-# KSSC Year 12 Revision (Form 6)
+# KSSC Year 12 (Form 6)
 
-Revision apps for Year 12 students in all Kiribati schools.
+Apps for Year 12 students in all Kiribati schools.
 
 **Website:** https://teetamaribo7-cpu.github.io/kssc12/
 

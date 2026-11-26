@@ -1,4 +1,4 @@
-// KSSC Form 6 revision app — created by teetamaribo7
+// KSSC Form 6 app — created by teetamaribo7
 var SUBJECTS = {};
 var LANG = (function(){ try{ return JSON.parse(localStorage.getItem('f6_lang'))||'en'; }catch(e){ return 'en'; } })();
 var STR = {
@@ -75,7 +75,7 @@ var VIEWS = {};
 VIEWS.welcome = function(v){
   setTitle('KSSC Form 6');
   var opts='<option value="">'+L('chooseSchool')+'</option>'+SCHOOLS.map(function(x){return '<option>'+esc(x)+'</option>';}).join('')+'<option value="__other">'+L('other')+'</option>';
-  v.innerHTML = '<div class="hero"><img src="img/logo.svg" alt="TM logo"><h1>KSSC Form 6 Revision</h1>'+
+  v.innerHTML = '<div class="hero"><img src="img/logo.svg" alt="TM logo"><h1>KSSC Form 6</h1>'+
    '<p class="muted">Notes, quizzes and worked past-paper solutions for Form 6 (Year 12) students in Kiribati.</p></div>'+
    '<div class="card"><label>'+L('name')+'</label><input id="n" placeholder="e.g. Teeta Maribo">'+
    '<label>'+L('school')+'</label><select id="ss" onchange="document.getElementById(\'s\').style.display=this.value===\'__other\'?\'block\':\'none\'">'+opts+'</select>'+
@@ -211,7 +211,7 @@ VIEWS.settings = function(v){
     '<button class="row" onclick="show(\'stream\')">🔀<span class="grow">'+L('changeStream')+'</span>›</button>';
   h+='<button class="row" onclick="toggleLang()">🌐<span class="grow">'+L('language')+': <b>'+(LANG==='en'?'English':'Te Kiribati')+'</b></span>›</button>';
   h+='<button class="row" onclick="show(\'teacher\')">👩‍🏫<span class="grow">'+L('teacher')+'<small>Teachers only – needs a school PIN</small></span>›</button>';
-  h+='<div class="card hero"><img src="img/logo.svg"><h2>KSSC Form 6 Revision</h2><p class="muted">Version '+APP_VERSION+'<br>Notes, topic quizzes and worked solutions for KSSC past papers (MOE Kiribati).<br>Solutions are worked out independently and checked against the official marking schemes.</p><b>Created by '+esc(CREATOR)+'</b></div>';
+  h+='<div class="card hero"><img src="img/logo.svg"><h2>KSSC Form 6</h2><p class="muted">Version '+APP_VERSION+'<br>Notes, topic quizzes and worked solutions for KSSC past papers (MOE Kiribati).<br>Solutions are worked out independently and checked against the official marking schemes.</p><b>Created by '+esc(CREATOR)+'</b></div>';
   v.innerHTML=h;
 };
 function toggleLang(){ LANG = LANG==='en'?'ki':'en'; save('lang',LANG); save('newsAt',0); if(window.checkNews) checkNews(); if(LANG==='ki' && !Object.keys(STR.ki).length) toast('Te Kiribati translation coming soon'); show('settings',null,true); }
