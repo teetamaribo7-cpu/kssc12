@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>KSSC Form 6</title>
+<link rel="stylesheet" href="app.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14213d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KSSC Form 6">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+</head>
+<body>
+<header id="bar">
+  <button id="back" onclick="goBack()" aria-label="Back">‹</button>
+  <div id="title">KSSC Form 6</div>
+  <button id="menu" onclick="show('settings')" aria-label="Settings">⚙</button>
+</header>
+<main id="view"></main>
+<div id="toast"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="features.js"></script>
+<script src="content/links.js"></script>
+<script src="content/library.js"></script>
+<script src="content/eng.js"></script>
+<script src="content/lit.js"></script>
+<script src="content/mat.js"></script>
+<script src="content/phy.js"></script>
+<script src="content/che.js"></script>
+<script src="content/bio.js"></script>
+<script src="content/ict.js"></script>
+<script src="content/eco.js"></script>
+<script src="content/acc.js"></script>
+<script src="content/geo.js"></script>
+<script src="content/his.js"></script>
+<script>start();if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>
