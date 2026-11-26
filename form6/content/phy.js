@@ -267,5 +267,139 @@ secs:[
 {n:'19.',q:'NOT a characteristic of isotopes?',a:'<b>A</b>: "same number of neutrons" is false; isotopes have different numbers of neutrons.'},
 {n:'20.',q:'Penetrating power from most to least?',a:'<b>D</b>: Gamma > Beta > Alpha.'}
 ]}
+]},
+{y:2024, src:'P2024/2024 KSSC PHY Q&A final.pdf', note:'Worked solutions, checked against the official marking scheme. ⚠ marks the places where the MOE scheme or the paper is wrong. g = 10 m/s² (KSSC equations sheet) unless the question gives 9.8.',
+secs:[
+{t:'Q1 – Mirrors and lenses (16 marks)', qs:[
+{n:'1a(i).',q:'A concave mirror forms an image of a bottle on a screen. Real or virtual?',a:'<b>Real</b>. Only a real image can be caught on a screen, because the light rays actually meet there.'},
+{n:'1a(ii).',q:'v = 16.0 cm and f = 9.00 cm. Find the object distance u.',a:'Mirror formula: 1/f = 1/u + 1/v\n1/u = 1/9 − 1/16 = (16 − 9)/144 = 7/144\n<b>u = 144/7 ≈ 20.6 cm</b>'},
+{n:'1a(iii).',q:'Image height 0.75 cm. Show the bottle is 0.97 cm tall.',a:'Magnification: hᵢ/hₒ = v/u\nhₒ = hᵢ × u/v = 0.75 × 20.6/16 = <b>0.97 cm</b>'},
+{n:'1a(iv).',q:'Why can no image be obtained on a screen with a convex mirror?',a:'A convex mirror makes reflected rays <b>spread out (diverge)</b>. They never actually meet in front of the mirror, so the image is <b>virtual</b> (behind the mirror). A virtual image cannot be formed on a screen.'},
+{n:'1b(i).',q:'Object between F and a convex lens: draw rays to locate the image.',a:'Ray 1: from the top of the object parallel to the axis → refracts through F on the far side.\nRay 2: from the top of the object straight through the centre of the lens (no bending).\nThese rays spread out on the far side. Extend them backwards (dashed lines) on the object side: they meet <b>above and behind the object</b>. That point is the top of the image IC.'},
+{n:'1b(ii).',q:'Nature, orientation and size of the image',a:'<b>Virtual, erect (upright), enlarged</b>. This is how a magnifying glass works.'},
+{n:'1b(iii).',q:'Camera image vs magnifying-glass image',a:'Camera: the object is far away (beyond 2F), so the image is <b>real, inverted and diminished</b> and falls on the film or sensor.\nMagnifying glass: the object is closer than F, so the image is <b>virtual, upright and enlarged</b>.'}
+]},
+{t:'Q2 – Refraction and waves (16 marks)', qs:[
+{n:'2a(i).',q:'Draw incident and refracted rays as light goes from seawater (n = 1.33) into air',a:'Draw the incident ray in the water going up to the surface at an angle to the normal. In the air, the refracted ray bends <b>away from the normal</b> (a bigger angle), because light speeds up going into a less dense medium. Add arrows on both rays.'},
+{n:'2a(ii).',q:'Name of the gradient of a sin θ₁ vs sin θ₂ graph',a:'The <b>refractive index</b> (Snell\'s law: n = sin θ₁ / sin θ₂).'},
+{n:'2a(iii).',q:'Angle of refraction at the critical angle',a:'<b>90°</b>. The refracted ray runs along the boundary.'},
+{n:'2b(i).',q:'Define wavelength and frequency',a:'<b>Wavelength (λ)</b>: the distance between two neighbouring points in phase, e.g. crest to crest (in m).\n<b>Frequency (f)</b>: the number of complete waves passing a point each second (in Hz).'},
+{n:'2b(ii).',q:'Longitudinal wave: wave direction vs particle movement (with a diagram)',a:'In a longitudinal wave the particles vibrate <b>back and forth parallel to the direction the wave travels</b>, which makes compressions (particles close together) and rarefactions (particles spread out).\nDiagram: a spring or row of dots with bunched and spread regions. Put a ↔ arrow for the particle movement and a → arrow for the wave direction. Example: sound.'},
+{n:'2b(iii).',q:'12 waves in 15 s, λ = 0.5 m. Show v = 0.4 m/s',a:'f = 12/15 = 0.8 Hz\nv = fλ = 0.8 × 0.5 = <b>0.4 m/s</b>'},
+{n:'2c(i).',q:'Refraction is greatest in the (lower/higher) frequency range; red light bends (less/more) than blue',a:'<b>higher</b> frequency; red bends <b>less</b>.'},
+{n:'2c(ii).',q:'Discuss the wave model of light. Give an example.',a:'The wave model says light travels as a <b>transverse electromagnetic wave</b>. So light can reflect, refract, <b>diffract</b> (spread round edges) and <b>interfere</b>, just like water waves.\nExample: in Young\'s double-slit experiment, light makes bright and dark fringes (interference). Only waves can do this.'},
+{n:'2c(iii).',q:'Show what happens to diffracted waves after they pass boundary B',a:'When the waves pass through the gap in boundary B they <b>diffract again</b>: they spread out into curved (circular) wavefronts beyond the gap. Keep the <b>same wavelength</b> (same spacing). A narrower gap gives more spreading.'}
+]},
+{t:'Q3 – Interference and motion graphs (16 marks)', qs:[
+{n:'3a(i).',q:'Two square pulses fully overlap. Draw the resultant',a:'Superposition principle: <b>add the displacements</b>. Two upward pulses of heights h₁ and h₂ give one square pulse of height h₁ + h₂ (same width). If one pulse is up and one is down, subtract them.'},
+{n:'3a(ii).',q:'Why can\'t two independent light sources show interference?',a:'Interference needs <b>coherent</b> sources: the same frequency and a <b>constant phase difference</b>. Two separate lamps send out light in random bursts, so their phase difference keeps changing and the fringes blur out. One source split by two slits is coherent.'},
+{n:'3a(iii).',q:'T/F: 1. Destructive interference: peaks line up with troughs. 2. Constructive: peaks and troughs line up.',a:'1. <b>T</b>\n2. <b>F</b>. Constructive interference is peaks lining up with peaks (and troughs with troughs).'},
+{n:'3b(i).',q:'1st to 7th nodal line = 6.0 cm, L = 2.5 m, d = 1.6 × 10² µm. Find λ',a:'From the 1st to the 7th nodal line there are <b>6 fringe spacings</b>: Δx = 6.0/6 = 1.0 cm = 0.010 m\nd = 1.6 × 10² µm = 1.6 × 10⁻⁴ m\nλ = dΔx/L = (1.6 × 10⁻⁴ × 0.010)/2.5 = <b>6.4 × 10⁻⁷ m (640 nm)</b>\n⚠ The MOE scheme gives 6.4 × 10⁻⁹ m, which is a power-of-ten mistake. 640 nm is red/orange visible light.'},
+{n:'3b(ii).',q:'Effect of a shorter wavelength on the pattern',a:'Δx = λL/d, so a shorter λ makes the fringes <b>closer together</b> (narrower pattern) when L and d stay the same.'},
+{n:'3c(i).',q:'Gradient of a displacement–time graph',a:'<b>Velocity</b>.'},
+{n:'3c(ii).',q:'Motion between 1445 and 1530',a:'The graph is flat, so she is <b>stationary (at rest)</b>: velocity = 0.'},
+{n:'3c(iii).',q:'Distance from home to the airport',a:'<b>40 km</b>.'},
+{n:'3c(iv).',q:'Minutes waiting at the airport',a:'1445 → 1530 = <b>45 minutes</b>.'},
+{n:'3c(v).',q:'Average velocity home → airport (1400–1445) in m/s',a:'v = s/t = 40 000 m ÷ (45 × 60 s) = 40 000/2700 = <b>14.8 m/s</b> (towards the airport)'}
+]},
+{t:'Q4 – Kinematics, vectors and Newton\'s laws (16 marks)', qs:[
+{n:'4a(i).',q:'0 → 5.0 m/s in 12 s. Acceleration?',a:'a = (v − u)/t = (5.0 − 0)/12 = <b>0.42 m/s²</b>'},
+{n:'4a(ii).',q:'Show the displacement is 30 m',a:'s = ½(u + v)t = ½(0 + 5.0)(12) = <b>30 m</b>'},
+{n:'4b(i).',q:'Scalar vs vector',a:'A <b>scalar</b> has size (magnitude) only. A <b>vector</b> has size <b>and direction</b>.'},
+{n:'4b(ii).',q:'One example of each',a:'Scalar: mass, distance, speed, time, energy.\nVector: displacement, velocity, force, acceleration, momentum.'},
+{n:'4b(iii).',q:'Draw R = M − N',a:'M − N = M + (−N). <b>Reverse the arrow of N</b> (same length, opposite direction). Join its tail to the head of M. The resultant R goes from the tail of M to the head of −N.'},
+{n:'4c(i).',q:'What causes motion (a change in motion)?',a:'An <b>unbalanced (net) force</b>.'},
+{n:'4c(ii).',q:'In F = ma, F stands for…',a:'The <b>net (unbalanced/resultant) force</b>, in newtons.'},
+{n:'4c(iii).',q:'Two differences between mass and weight',a:'1. Mass is the <b>amount of matter</b> (kg). Weight is the <b>gravitational force</b> on it (N).\n2. Mass is a <b>scalar</b> and the same everywhere. Weight is a <b>vector</b> (points down) and changes with g, e.g. on the Moon.\nW = mg.'},
+{n:'4c(iv).',q:'Thrust 27 550 N, drag 7980 N, weight 7700 N, two reaction forces 3850 N. Unbalanced force?',a:'Vertical: 3850 + 3850 = 7700 N up = weight 7700 N down → net 0\nHorizontal: 27 550 − 7980 = <b>19 570 N forward</b> (in the thrust direction)'}
+]},
+{t:'Q5 – Torque, momentum and projectiles (16 marks)', qs:[
+{n:'5a(i).',q:'Velocity and acceleration of a moving body in equilibrium',a:'The net force is zero, so the <b>acceleration is zero</b> and the body moves at a <b>constant velocity</b> (same speed, straight line).'},
+{n:'5a(ii).',q:'Torque 31.5 N m from a force of 450 N. Show d = 0.07 m',a:'τ = Fd → d = τ/F = 31.5/450 = <b>0.07 m</b>'},
+{n:'5b(i).',q:'Define momentum. Scalar or vector?',a:'Momentum = <b>mass × velocity</b> (p = mv, in kg m/s). It is a <b>vector</b> (same direction as the velocity).'},
+{n:'5b(ii).',q:'A 0.65 kg ball falls for 1.4 s. Impulse?',a:'The only force is its weight: F = mg = 0.65 × 10 = 6.5 N\nImpulse = FΔt = 6.5 × 1.4 = <b>9.1 N s</b>'},
+{n:'5b(iii).',q:'Why is the falling ball\'s momentum not conserved?',a:'Momentum is conserved only in an <b>isolated system</b> (no external force). The ball has an <b>external force</b> (gravity) acting on it, so its momentum keeps increasing. (For the ball + Earth together, momentum is conserved.)'},
+{n:'5c(i).',q:'Sketch the path of the kicked ball',a:'A symmetric <b>parabola</b> (upside-down U) starting at the origin, rising to a maximum height, then coming back down to the x-axis.'},
+{n:'5c(ii).',q:'u = 32 m/s at 40°. Find the vertical and horizontal components',a:'Vertical: 32 sin 40° = <b>20.6 m/s</b>\nHorizontal: 32 cos 40° = <b>24.5 m/s</b>'},
+{n:'5c(iii).',q:'Total horizontal displacement',a:'Time to the top: t = 20.6/10 = 2.06 s, so the total time is 4.11 s\nRange = 24.5 × 4.11 = <b>≈ 101 m</b>'}
+]},
+{t:'Q6 – Gravitation and gases (16 marks)', qs:[
+{n:'6a(i).',q:'Two uses of the universal law of gravitation',a:'1. Calculating the <b>orbits of satellites and planets</b> (their speed, period and height).\n2. Explaining <b>tides</b>, which are caused by the Moon\'s and Sun\'s pull on the oceans.\n(It is also used to find the mass of the Earth or of planets.)'},
+{n:'6a(ii).',q:'Moon: v = 1020 km/s and T = 27 days (1620 h). Find the orbit radius',a:'v = 2πr/T → r = vT/2π\nUsing the paper\'s numbers (v = 1.02 × 10⁶ m/s, T = 1620 h = 5.83 × 10⁶ s):\nr = (1.02 × 10⁶ × 5.83 × 10⁶)/2π = <b>9.47 × 10¹¹ m</b> (the MOE answer)\n⚠ The paper has two errors. 27 days is <b>648 h</b>, not 1620 h, and the Moon\'s real speed is <b>1020 m/s</b>, not km/s. With the true values: r = 1020 × 2.33 × 10⁶/2π ≈ <b>3.8 × 10⁸ m</b>, the real Earth–Moon distance.'},
+{n:'6a(iii).',q:'Centripetal acceleration of the Moon',a:'a = v²/r\nPaper\'s numbers: (1.02 × 10⁶)²/9.47 × 10¹¹ = <b>1.1 m/s²</b> (MOE answer)\nTrue values: 1020²/3.8 × 10⁸ ≈ <b>2.7 × 10⁻³ m/s²</b>'},
+{n:'6b(i).',q:'The forces that produce the ___ of a gas come from the ___ of moving molecules',a:'<b>pressure</b>; <b>collisions</b>.'},
+{n:'6b(ii)1.',q:'Temperature in terms of energy and particles',a:'Temperature measures the <b>average kinetic energy</b> of the gas particles. Hotter means the particles move faster.'},
+{n:'6b(ii)2.',q:'Pressure increased at constant volume and mass: what happens to T?',a:'<b>Temperature increases</b> (P ∝ T at constant V: Gay-Lussac\'s law).'},
+{n:'6b(iii).',q:'Convert 796.2 °C to K, and 2118.8 K to °C',a:'K = °C + 273: 796.2 + 273 = <b>1069.2 K</b>\n°C = K − 273: 2118.8 − 273 = <b>1845.8 °C</b>'},
+{n:'6b(iv).',q:'180 kPa at 300 K, constant volume, now 420 kPa. Show T₂ = 700 K',a:'P₁/T₁ = P₂/T₂ → T₂ = P₂T₁/P₁ = 420 × 300/180 = <b>700 K</b>'},
+{n:'6b(v).',q:'V = 4.23 L, P = 2.47 atm, T = 290 K, R = 0.0821. Find n',a:'n = PV/RT = (2.47 × 4.23)/(0.0821 × 290) = 10.45/23.81 = <b>0.44 mol</b>'}
+]},
+{t:'Q7 – Springs, work and heat (16 marks)', qs:[
+{n:'7a(i).',q:'Plot force vs extension',a:'Plot the points (5.2, 0), (6.4, 25), (7.6, 50), (8.8, 75) with extension (cm) on the x-axis and force (N) on the y-axis. Draw a straight line through them with a ruler.\n⚠ The table has an error: 250 g weighs 2.5 N, not 25 N. Use the values printed, as the marking scheme does.'},
+{n:'7a(ii).',q:'What does the gradient give?',a:'The <b>spring constant k</b> (stiffness), from Hooke\'s law F = kx.'},
+{n:'7a(iii).',q:'Calculate the gradient with units',a:'k = ΔF/Δx = (75 − 0)/(0.088 − 0.052) = 75/0.036 = <b>2083 N/m (≈ 2.1 × 10³ N/m)</b>'},
+{n:'7a(iv).',q:'Elastic PE at 8.0 cm',a:'Eₚ = ½kx² = ½ × 2083 × (0.080)² = <b>6.67 J</b> (MOE answer)\nNote: the "extension" column really looks like the spring\'s length (5.20 cm at 0 N). If so, the true extension at 8.0 cm is 2.8 cm, giving ½ × 2083 × 0.028² = 0.82 J. In the exam, follow the question as printed: 6.67 J.'},
+{n:'7b(i).',q:'Area under a force–displacement graph',a:'<b>Work done</b> (energy transferred), in joules.'},
+{n:'7b(ii).',q:'What happens to energy when work is done on a body?',a:'Energy is <b>transferred</b> to the body (or changed from one form to another). The work done equals the energy transferred.'},
+{n:'7b(iii).',q:'KE and momentum in an elastic collision',a:'Both <b>kinetic energy and momentum are conserved</b>. (In an inelastic collision only momentum is conserved.)'},
+{n:'7b(iv).',q:'Why does the GPE of a stone thrown upward increase?',a:'GPE = mgh. As the stone rises its <b>height h increases</b>, so its GPE increases. Its kinetic energy is changing into GPE (it slows down).'},
+{n:'7c(i).',q:'725 g heated from 20 °C to 100 °C uses 243 600 J. Show c = 4200',a:'ΔT = 100 − 20 = 80 °C\nc = Q/(mΔT) = 243 600/(0.725 × 80) = <b>4200 J/kg°C</b>'},
+{n:'7c(ii).',q:'Energy to vaporise 85 g (L = 2.26 × 10⁶ J/kg)',a:'Q = mL = 0.085 × 2.26 × 10⁶ = <b>1.92 × 10⁵ J</b> (192 100 J)'},
+{n:'7c(iii).',q:'Why doesn\'t the temperature change while boiling?',a:'The energy is used as <b>latent heat</b> to <b>break the bonds</b> between the water molecules (changing the state), not to increase their kinetic energy. So the temperature stays at 100 °C.'}
+]},
+{t:'Q8 – Electric current and circuits (16 marks)', qs:[
+{n:'8a(i).',q:'In an electric field, current results from…',a:'The <b>flow of charges</b> (electrons) pushed by the electric field (potential difference).'},
+{n:'8a(ii).',q:'Flow of charge in terms of potential',a:'Positive charge flows from <b>high potential to low potential</b>.'},
+{n:'8a(iii).',q:'Conventional current vs electron flow',a:'Conventional current: from the <b>positive (+) terminal to the negative (−)</b> terminal.\nElectron flow: the opposite way, <b>− to +</b>.'},
+{n:'8a(iv).',q:'What does resistance do to the charges and their energy?',a:'Resistance <b>opposes the flow</b> of charges (slows them, reducing the current). The charges <b>lose energy</b>, which changes to <b>heat (and light)</b> in the resistor.'},
+{n:'8b(i).',q:'Total resistance: 2 Ω, 4 Ω, 6 Ω in parallel, in series with 5 Ω and 3 Ω',a:'Parallel: 1/R = 1/2 + 1/4 + 1/6 = (6 + 3 + 2)/12 = 11/12 → R = 12/11 = 1.09 Ω\nTotal: Rₜ = 5 + 1.09 + 3 = <b>9.1 Ω</b>'},
+{n:'8b(ii).',q:'Ammeter reading',a:'I = V/R = 12/9.1 = <b>1.3 A</b>'},
+{n:'8b(iii).',q:'Show the p.d. across the 3.0 Ω resistor is 4.0 V',a:'V = IR = 1.32 × 3.0 = <b>4.0 V</b>'},
+{n:'8c(i).',q:'Iron: 1800 W, 7.5 A. Resistance?',a:'P = I²R → R = P/I² = 1800/7.5² = 1800/56.25 = <b>32 Ω</b>'},
+{n:'8c(ii).',q:'Fridge: 920 W, 240 V. Resistance?',a:'P = V²/R → R = V²/P = 240²/920 = 57 600/920 = <b>62.6 Ω</b>'}
+]},
+{t:'Q9 – Magnetism and induction (16 marks)', qs:[
+{n:'9a(i).',q:'Describe the motor effect',a:'A <b>current-carrying conductor in a magnetic field feels a force</b>. This happens because its own field interacts with the magnet\'s field. The force is at right angles to both the current and the field (use the right-hand / Fleming\'s left-hand rule).'},
+{n:'9a(ii).',q:'L = 60 cm, I = 50 mA, B = 0.25 T. Show F = 7.5 × 10⁻³ N',a:'F = BIL = 0.25 × 0.050 × 0.60 = <b>7.5 × 10⁻³ N</b>'},
+{n:'9b(i).',q:'Wire 1 shows ⊙ and Wire 2 shows ⊗. Which is into and which out of the page?',a:'Wire 1 (dot ⊙): <b>out of the page</b> (you see the arrow\'s point).\nWire 2 (cross ⊗): <b>into the page</b> (you see the arrow\'s tail feathers).'},
+{n:'9b(ii).',q:'Draw field lines round Wire 2',a:'Draw <b>concentric circles</b> round the wire, spaced further apart as you go outwards. The current is into the page, so the arrows go <b>clockwise</b> (right-hand grip rule: thumb into the page, fingers curl clockwise).'},
+{n:'9b(iii).',q:'Two parallel wires 4.50 m long, 2.75 A each, 10.0 m apart. Show F = 680 × 10⁻⁹ N',a:'F = k I₁I₂ L/r, with k = 2 × 10⁻⁷\nF = 2 × 10⁻⁷ × 2.75 × 2.75 × 4.50/10.0 = <b>6.8 × 10⁻⁷ N</b> = 680 × 10⁻⁹ N'},
+{n:'9c(i).',q:'Effect on the induced current of: 1. reversing the field 2. cutting the field faster',a:'1. The current <b>reverses direction</b>.\n2. The current (emf) <b>increases</b>.'},
+{n:'9c(ii).',q:'State Lenz\'s law',a:'The induced current flows in a direction that <b>opposes the change</b> that produced it. (This follows from conservation of energy.)'},
+{n:'9c(iii).',q:'A 9.5 m wire falls at 4.2 m/s across B = 0.35 × 10⁻⁴ T. Find the emf',a:'emf = BLv = 0.35 × 10⁻⁴ × 9.5 × 4.2 = <b>1.4 × 10⁻³ V</b>'}
+]},
+{t:'Q10 – Electric fields, atoms and radioactivity (16 marks)', qs:[
+{n:'10a(i).',q:'Two similarities between Newton\'s law of gravitation and Coulomb\'s law',a:'1. Both are <b>inverse-square laws</b>: F ∝ 1/r².\n2. Both forces are proportional to the <b>product</b> of the two masses or charges, and both act along the line joining them (non-contact forces).'},
+{n:'10a(ii).',q:'V = 5000 V, plates 2.50 cm apart. Field strength?',a:'E = V/d = 5000/0.025 = <b>2.0 × 10⁵ V/m</b>'},
+{n:'10a(iii).',q:'q = 4.8 × 10⁻¹⁹ C moves 10 cm. Show W = 9.6 × 10⁻¹⁵ J',a:'W = qEd = 4.8 × 10⁻¹⁹ × 2.0 × 10⁵ × 0.10 = <b>9.6 × 10⁻¹⁵ J</b>\n⚠ This only works if the drop moves 10 cm <b>along the field</b> (towards a plate). If it really moved parallel to the plates (at right angles to the field), the field would do <b>no work</b>. The question is badly worded; write the calculation above to get the marks.'},
+{n:'10b(i).',q:'Describe Rutherford\'s model of the atom',a:'Most of the atom is <b>empty space</b>. Nearly all its mass and all its positive charge are in a <b>tiny, dense nucleus</b> at the centre, and the electrons orbit around it.'},
+{n:'10b(ii).',q:'What causes the biggest deflections of alpha particles?',a:'A <b>near head-on approach to the positive nucleus</b>. The strong repulsion between the positive α particle and the positive nucleus can bounce it right back.'},
+{n:'10b(iii).',q:'What do the deflections confirm?',a:'That the atom has a <b>small, dense, positively charged nucleus</b>. Most α particles go straight through, which shows the atom is mostly empty space.'},
+{n:'10c(i).',q:'Paths of α, β and γ in a magnetic field',a:'<b>γ</b>: goes straight (no charge).\n<b>α</b> (+2): bends one way, only a little (heavy).\n<b>β</b> (−1): bends the <b>opposite way</b>, much more strongly (very light).'},
+{n:'10c(ii).',q:'100 mg, half-life 8 h. Amount left after 1 day',a:'24 h ÷ 8 h = 3 half-lives\n100 → 50 → 25 → <b>12.5 mg</b>'},
+{n:'10c(iii).',q:'Time until 6.25 mg remain',a:'100 → 50 → 25 → 12.5 → 6.25 is 4 half-lives\nTime = 4 × 8 = <b>32 hours</b>'}
+]},
+{t:'Section B – Multiple choice (40 marks)', qs:[
+{n:'1.',q:'Light hits a plane mirror at 40° to the dashed line PQ. Angle of reflection and the name of PQ?',a:'<b>A</b>: 40°, normal. (PQ is at right angles to the mirror, and the 40° is measured from it. Angle of reflection = angle of incidence.)'},
+{n:'2.',q:'Image of the lamp point in a plane mirror',a:'<b>B</b>: at P and virtual. The image is as far behind the mirror as the object is in front, and plane-mirror images are always virtual.\n⚠ The MOE scheme says A (real), which is wrong.'},
+{n:'3.',q:'Red vs blue light',a:'<b>B</b>: red has a longer wavelength.'},
+{n:'4.',q:'How to increase the fringe spacing',a:'<b>C</b>: increase the slit-to-screen distance (Δx = λL/d).'},
+{n:'5.',q:'Which statement is NOT true?',a:'<b>C</b>. The area under a displacement–time graph is not acceleration.'},
+{n:'6.',q:'Thrown horizontally at 10 m/s, lands after 3.0 s (g = 9.8). Speed at impact?',a:'vᵧ = gt = 9.8 × 3.0 = 29.4 m/s, vₓ = 10 m/s\nv = √(10² + 29.4²) = √964 = <b>31 m/s → C</b>\n⚠ The MOE scheme says D (39 m/s), which comes from adding the components instead of using Pythagoras. That is wrong.'},
+{n:'7.',q:'Firework explosion: 100 g at 8 m/s down; two 50 g pieces at 60°. Find v₁, v₂',a:'Momentum before = 0. By symmetry v₁ = v₂ = v.\nVertical: 2 × 0.050 × v sin 60° = 0.100 × 8 → 0.0866v = 0.8 → v = <b>9.2 m/s → B</b>'},
+{n:'8.',q:'Free fall near Earth: gravitational field and acceleration',a:'<b>C</b>: both stay the same (g is constant near the surface).'},
+{n:'9.',q:'g on Pluto = 0.66 m/s². An object weighs 6.0 N on Earth. Weight on Pluto?',a:'m = 6.0/9.8 = 0.61 kg → W = 0.61 × 0.66 = <b>0.40 N → D</b>\n⚠ The MOE scheme says B (4.0 N), which is ten times too big.'},
+{n:'10.',q:'Energy stored in a coconut in a tree',a:'<b>D</b>: gravitational potential energy.'},
+{n:'11.',q:'320 N over 1.5 m. Work done?',a:'W = Fd = 320 × 1.5 = <b>480 J → D</b>'},
+{n:'12.',q:'Pumping air into a ball at constant T',a:'<b>B</b>: pressure increases (more molecules, more collisions).'},
+{n:'13.',q:'Good conductors have many loosely bound…',a:'<b>D</b>: electrons.'},
+{n:'14.',q:'0.25 A at 240 V. Resistance?',a:'R = V/I = 240/0.25 = <b>960 Ω → D</b>'},
+{n:'15.',q:'Right-hand rule: the magnetic force is…',a:'<b>A</b>: perpendicular to both the current and the field.'},
+{n:'16.',q:'Deflection of a moving-coil galvanometer',a:'<b>D</b>: directly proportional to the number of turns (deflection ∝ BANI/k).'},
+{n:'17.',q:'Neutral electroscope touched by a negative rod',a:'<b>B</b>: negative (electrons transfer by contact).'},
+{n:'18.',q:'E = 8.0 × 10⁴ N/C at 2.0 m. E at 4.0 m?',a:'Double the distance → ¼ of the field: <b>2.0 × 10⁴ N/C → A</b>'},
+{n:'19.',q:'Neutrons in uranium-238 (Z = 92)',a:'238 − 92 = <b>146 → C</b>'},
+{n:'20.',q:'Beta decay of Cs-137',a:'<b>A</b>: ¹³⁷₅₅Cs → ⁰₋₁e + ¹³⁷₅₆Ba (the mass number stays the same and the atomic number goes up by 1).'}
+]}
 ]}
 ]});
