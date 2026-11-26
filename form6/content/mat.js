@@ -319,5 +319,72 @@ secs:[
 {n:'10C.',q:'a = 14, b = 19, c = 22. Find angle A to the nearest degree',a:'cos A = (b² + c² − a²)/(2bc) = (361 + 484 − 196)/(2 × 19 × 22) = 649/836 = 0.7763\n<b>A ≈ 39°</b>'},
 {n:'10D.',q:'Derive the formula for the area of a segment (radius r, angle θ in radians)',a:'Segment = sector − triangle\nSector area = ½r²θ\nTriangle area (two radii with angle θ) = ½ab sin C = ½r² sin θ\n<b>Segment area = ½r²(θ − sin θ)</b>'}
 ]}
+]},
+{y:2023, src:'P2023/MATHEMATICS EXAM 2023.pdf', note:'Worked solutions, checked by calculation and against the MOE rubric. ⚠ marks where the rubric differs from the paper.',
+secs:[
+{t:'Section A – Multiple choice (20 marks)', qs:[
+{n:'1–5',q:'1 m = −½, y-intercept 3 in general form; 2 Quadratic; 3 5² = 25 as a log; 4 3log2 − log4; 5 Point on y = 2x + 1',a:'1 <b>A</b>: y = −½x + 3 → 2y = −x + 6 → 2y + x − 6 = 0\n2 <b>B</b>: y = x(x − 1) = x² − x\n3 <b>D</b>: log₅25 = 2\n4 <b>D</b>: log 8 − log 4 = log(8/4) = log 2\n5 <b>C</b>: (0, 1), since 2(0) + 1 = 1'},
+{n:'6–10',q:'6 tan θ for line l; 7 Centre of x² + y² = 16; 8 tₙ₊₁ = tₙ − 2, t₁ = 2; 9 Sum to infinity of 1, p, p²…; 10 3 + 6 + 9',a:'6 <b>B</b>: tan θ = Vy/Vx (rise/run)\n7 <b>D</b>: (0, 0)\n8 <b>A</b>: t₂ = 2 − 2 = 0\n9 <b>D</b>: −1 < p < 1 (|r| < 1)\n10 <b>B</b>: Σ from n=1 to 3 of 3n'},
+{n:'11–15',q:'11 P(H) = 0.44, 200 tosses; 12 Mode of N(76.4, 5.2); 13 Within 1 SD; 14 Most data near…; 15 Graph type',a:'11 <b>C</b>: 0.44 × 200 = 88\n12 <b>D</b>: 76.4 kg (mean = median = mode)\n13 <b>C</b>: 68%\n14 <b>C</b>: the middle\n15 <b>C</b>: hyperbolic (y = k/x, two branches)'},
+{n:'16–20',q:'16 Domain of the graph starting at (0, 1); 17 Symmetry of y = x; 18 ∫₀¹ x³ dx; 19 Amplitude of 3cos(4x + π); 20 Rule for θ',a:'16 <b>C</b>: x ≥ 0\n17 <b>C</b>: the line y = −x\n18 <b>C</b>: [x⁴/4]₀¹ = ¼\n19 <b>B</b>: 3\n20 <b>B</b>: 12/sin θ = 10/sin 47° (12 is opposite θ, 10 is opposite 47°)'}
+]},
+{t:'Q1 – Algebra (10 marks)', qs:[
+{n:'1A.',q:'Simplify (x − 2)/(12 − 3x²)',a:'12 − 3x² = 3(4 − x²) = 3(2 − x)(2 + x)\n(x − 2) = −(2 − x)\n= <b>−1/(3(x + 2))</b>'},
+{n:'1B.',q:'Factorise 5p² − 6p + 1',a:'ac = 5. Two numbers with product 5 and sum −6: −5 and −1\n5p² − 5p − p + 1 = 5p(p − 1) − 1(p − 1) = <b>(5p − 1)(p − 1)</b>'},
+{n:'1C.',q:'Solve 4/(1 − x) = 3/(2x)',a:'Cross-multiply: 8x = 3(1 − x) = 3 − 3x\n11x = 3 → <b>x = 3/11 ≈ 0.27</b>'},
+{n:'1D.',q:'Solve 2ˣ = 32',a:'32 = 2⁵ → <b>x = 5</b>'},
+{n:'1E.',q:'Simplify 8/x² ÷ 2/x − 1/x',a:'Divide first: 8/x² × x/2 = 4/x\n4/x − 1/x = <b>3/x</b>'}
+]},
+{t:'Q2 – Algebra (10 marks)', qs:[
+{n:'2A.',q:'Make x the subject: 1/x + 1/y = 1/f',a:'1/x = 1/f − 1/y = (y − f)/(fy)\n<b>x = fy/(y − f)</b>'},
+{n:'2B.',q:'Solve 2x + 3y = 11 and 4x − 2y = 5',a:'Multiply the first by 2: 4x + 6y = 22\nSubtract the second: 8y = 17 → <b>y = 17/8 = 2.125</b>\n2x = 11 − 6.375 = 4.625 → <b>x = 37/16 ≈ 2.31</b>\nCheck: 4(2.3125) − 2(2.125) = 5 ✓\n⚠ The MOE rubric uses 4x − 2y = <b>10</b>, but the paper says <b>5</b>.'},
+{n:'2C(i).',q:'Show (x − 1) is a factor of x³ − 2x² − x + 2',a:'f(1) = 1 − 2 − 1 + 2 = <b>0</b>, so by the factor theorem (x − 1) is a factor.'},
+{n:'2C(ii).',q:'Factorise completely',a:'Divide by (x − 1): x³ − 2x² − x + 2 = (x − 1)(x² − x − 2)\n= <b>(x − 1)(x − 2)(x + 1)</b>\n(Or group: x²(x − 2) − 1(x − 2) = (x − 2)(x² − 1).)'}
+]},
+{t:'Q3 – Coordinate geometry (10 marks)', qs:[
+{n:'3A.',q:'Where does y = 3x + 1 meet y = 2x − 1?',a:'3x + 1 = 2x − 1 → x = −2; y = 3(−2) + 1 = −5 → <b>(−2, −5)</b>'},
+{n:'3B.',q:'Length from (5, 8) to (2, 4)',a:'d = √[(5 − 2)² + (8 − 4)²] = √(9 + 16) = <b>5</b>'},
+{n:'3C.',q:'Draw a circle with centre (2, 4) and radius 3',a:'Mark the centre (2, 4). Mark the points 3 units away: (5, 4), (−1, 4), (2, 7), (2, 1). Draw a smooth circle through them (use a compass). Equation: (x − 2)² + (y − 4)² = 9.'},
+{n:'3D.',q:'Line l ⟂ y = −2x + 1 through (−2, 0)',a:'m = −2, so the perpendicular gradient = ½\ny − 0 = ½(x + 2) → <b>y = ½x + 1</b> (or x − 2y + 2 = 0)'}
+]},
+{t:'Q4 – Sequences and series (10 marks)', qs:[
+{n:'4A.',q:'AP: a = 3, t₅ = 11. Find d',a:'t₅ = a + 4d → 3 + 4d = 11 → <b>d = 2</b>'},
+{n:'4B.',q:'Sum to infinity of 4, 2, 1, ½…',a:'a = 4, r = ½ → S∞ = a/(1 − r) = 4/0.5 = <b>8</b>'},
+{n:'4C.',q:'General term of 1, 3, 9, 27, 81',a:'a = 1, r = 3 → <b>tₙ = 3ⁿ⁻¹</b>'},
+{n:'4D.',q:'An 85 L container leaks 15, 9, 5.4… litres per year. How much is left after 10 years?',a:'GP with a = 15, r = 9/15 = 0.6\nS₁₀ = 15(1 − 0.6¹⁰)/(1 − 0.6) = 37.5 × 0.99395 = 37.27 L leaked\nRemaining = 85 − 37.27 = <b>47.73 L</b>'}
+]},
+{t:'Q5 – Normal distribution (10 marks)', qs:[
+{n:'5A.',q:'z-score for x = 55, μ = 63, σ = 5',a:'z = (x − μ)/σ = (55 − 63)/5 = <b>−1.6</b> (1.6 SD below the mean)'},
+{n:'5B.',q:'Two features of a normal distribution',a:'1. <b>Bell-shaped and symmetric</b> about the mean.\n2. <b>Mean = median = mode</b> (in the centre).\n(Also: the total area is 1; 68% lies within 1 SD, 95% within 2 SD, 99.7% within 3 SD.)'},
+{n:'5D.',q:'P(Z < −0.76)',a:'From the table, P(0 < Z < 0.76) = 0.2764\nP(Z < −0.76) = 0.5 − 0.2764 = <b>0.2236</b>'}
+]},
+{t:'Q6 – Functions and limits (10 marks)', qs:[
+{n:'6A.',q:'lim (x→0) (5x² + x)/x',a:'= lim x(5x + 1)/x = lim (5x + 1) = <b>1</b>'},
+{n:'6B.',q:'f(x) = x³ → g(x) = x³ + 1',a:'A <b>vertical translation 1 unit up</b>.'},
+{n:'6C.',q:'Inverse of y = √(x + 1)/2',a:'Swap x and y: x = √(y + 1)/2 → 2x = √(y + 1) → 4x² = y + 1\n<b>f⁻¹(x) = 4x² − 1</b>, for x ≥ 0'},
+{n:'6D.',q:'Sketch f(x) = x² − 2x',a:'x-intercepts: x(x − 2) = 0 → (0, 0) and (2, 0)\ny-intercept: (0, 0)\nTurning point: x = 1, f(1) = −1 → <b>(1, −1)</b>, a minimum\nDraw a U-shaped parabola through these points.'}
+]},
+{t:'Q7 – Differentiation (10 marks)', qs:[
+{n:'7A.',q:'Gradient of the tangent to y = x² at (3, 9)',a:'dy/dx = 2x = 2(3) = <b>6</b>'},
+{n:'7B.',q:'Gradient of the normal to y = x² at (−2, 4)',a:'Tangent: 2(−2) = −4\nNormal = −1/(−4) = <b>¼</b>'},
+{n:'7C.',q:'Rectangle with 108 m of fencing. Largest area?',a:'2x + 2y = 108 → y = 54 − x\nA = x(54 − x) = 54x − x²\ndA/dx = 54 − 2x = 0 → x = 27, y = 27 (a square)\nA = 27 × 27 = <b>729 m²</b>'}
+]},
+{t:'Q8 – Trigonometry (10 marks)', qs:[
+{n:'8A.',q:'Solve sin θ = ½, 0° ≤ θ ≤ 360°',a:'Reference angle 30°. sin is positive in quadrants 1 and 2 → <b>θ = 30°, 150°</b>'},
+{n:'8B.',q:'Ramp at 45° (10 m long), sand pile side at 60°. Find x',a:'The triangle has angles 45°, 60° and 180 − 105 = 75°.\nSine rule: x/sin 45° = 10/sin 60°\nx = 10 sin 45°/sin 60° = <b>8.16 m</b>'},
+{n:'8C.',q:'60° in radians',a:'60 × π/180 = <b>π/3</b> (≈ 1.05)'},
+{n:'8D.',q:'Segment area: r = 12 cm, θ = 9π/12',a:'θ = 3π/4 (135°)\nA = ½r²(θ − sin θ) = ½ × 144 × (2.356 − 0.707) = 72 × 1.649 = <b>118.73 cm²</b>'}
+]},
+{t:'Q9 – Statistics (10 marks)', qs:[
+{n:'9A.',q:'Continuous or discrete: wake-up time; shoe size',a:'Time to wake up: <b>continuous</b> (measured)\nShoe sizes: <b>discrete</b> (set values)'},
+{n:'9B.',q:'Stratified sample of 30 from Science 20, English 50, Maths 80',a:'Total = 150. English = 50/150 × 30 = <b>10 students</b>'},
+{n:'9C.',q:'Describe systematic sampling',a:'List the population in order, work out k = population ÷ sample size, pick a random start, then choose <b>every k-th person</b> (e.g. every 5th name on the roll).'},
+{n:'9D.',q:'Histogram of heights',a:'x-axis: height (cm), from 120 to 160. y-axis: number of students.\nBars with <b>no gaps</b>: 120–130 → 10, 130–140 → 5, 140–150 → 10, 150–160 → 20.\nTitle: "Distribution of student heights".\n(The printed axis labels on the grid are mixed up: start the x-axis at 120.)'}
+]},
+{t:'Q10 – Integration (10 marks)', qs:[
+{n:'10A.',q:'∫(√x + 1) dx',a:'= <b>(2/3)x^(3/2) + x + c</b>'},
+{n:'10B.',q:'∫₁² (3x² + 2x − 1) dx',a:'[x³ + x² − x]₁² = (8 + 4 − 2) − (1 + 1 − 1) = 10 − 1 = <b>9</b>'},
+{n:'10C.',q:'Area between y = x and y = x²',a:'They meet at x = 0 and x = 1, and y = x is on top.\nA = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = ½ − ⅓ = <b>1/6 unit²</b>'}
+]}
 ]}
 ]});
