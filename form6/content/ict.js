@@ -141,5 +141,64 @@ secs:[
 {n:'c iii)',q:'SQL: all employees sorted by salary, descending',a:'SELECT EmployeeName, Salary FROM Employee ORDER BY Salary DESC;'},
 {n:'c v)',q:'SQL: maximum salary (aggregate function)',a:'SELECT MAX(Salary) AS MaxSalary FROM Employee;'}
 ]}
+]},
+{y:2024, src:'P2024/2024 KSSC Computer Studies Exam.pdf', note:'Worked answers. The spreadsheet and database answers use the exact cells and fields shown in the paper. ⚠ marks mistakes in the MOE scheme.',
+secs:[
+{t:'Section A – Multiple choice (20 marks)', qs:[
+{n:'1–5',q:'1 Trade secret/trademark/patent; 2 Two widely used languages; 3 Sends documents over a phone line; 4 Intermittent power; 5 Game streaming',a:'1 <b>b</b> (intellectual property)\n2 <b>d</b> (Java and C++). HTML and CSS are not programming languages.\n3 <b>c</b> (fax)\n4 <b>b</b> (powers on and off randomly)\n5 <b>a</b> (gaming through cloud services)'},
+{n:'6–10',q:'6 Resource efficiency of chip-based OS; 7 Extensions; 8 Keys and buttons; 9 CPU performance and memory leaks; 10 Shifts the view up one page',a:'6 <b>d</b> (optimised for low power and limited processing)\n7 <b>b</b> (.pdf, .mdb, .exe)\n8 <b>c</b> (keyboard)\n9 <b>d</b> (memory management)\n10 <b>c</b> (PgUp)'},
+{n:'11–15',q:'11 Moves words to the next line; 12 Open existing documents; 13 Non-numeric data; 14 Sorting the D.O.B. column; 15 Proportions of a whole',a:'11 <b>c</b> (word wrapping)\n12 <b>a</b> (Open)\n13 <b>b</b> (labels)\n14 <b>b</b>: ascending (1998 → 1999 → 2000 → 2010, oldest date first)\n15 <b>d</b> (pie)'},
+{n:'16–20',q:'16 Central tendency; 17 TRUE/FALSE type; 18 ALTER TABLE … DROP COLUMN; 19 Database table; 20 Retrieve all columns',a:'16 <b>d</b> (AVERAGE)\n17 <b>d</b> (Boolean)\n18 <b>a</b> (deletes a field)\n19 <b>b</b>\n20 <b>a</b>: SELECT * FROM Employees;'}
+]},
+{t:'Question 1 – Data, software and files (16 marks)', qs:[
+{n:'a(i).',q:'How ASCII represents a character; "A" in 8-bit binary',a:'ASCII gives every character a <b>number code</b>, which the computer stores in <b>binary</b> (one byte = 8 bits per character).\n"A" = 65 = <b>01000001</b>'},
+{n:'a(ii).',q:'Binary and storing many characters',a:'Each character takes <b>one byte (8 bits)</b>. A word or text is stored as a <b>sequence of bytes</b> in memory, one after another. For example, "HELLO" = 5 characters × 8 bits = <b>40 bits</b> (5 bytes). More characters need more bytes.'},
+{n:'b.',q:'Data compression; lossless vs lossy',a:'<b>Compression</b>: making a file <b>smaller</b> so it uses less storage and transfers faster.\n<b>Lossless</b>: no data is lost, and the original can be <b>restored exactly</b> (ZIP, PNG). Used for text and programs.\n<b>Lossy</b>: <b>some detail is removed permanently</b> to make the file much smaller (JPEG, MP3, MP4). Used for photos, music and video.'},
+{n:'c(i).',q:'Application software, with an example',a:'Programs that let the user do a <b>specific task</b>, e.g. <b>Microsoft Word</b> (writing), Excel, or Google Chrome.'},
+{n:'c(ii).',q:'Relationship between system and application software',a:'<b>System software</b> (the operating system, e.g. Windows) manages the hardware: CPU, memory, files and devices. <b>Application software runs on top of it</b> and asks the OS for these services. For example, when Word saves or prints, it asks Windows, and Windows talks to the disk or printer. Applications cannot work without the system software.'},
+{n:'d.',q:'Two basic elements of a GUI',a:'<b>Icons</b>: small pictures that stand for files, programs or commands (e.g. a bin for delete). You click or double-click them.\n<b>Menus</b>: lists of commands (e.g. File → Save, Print).\n(Also: windows, buttons, and the pointer/cursor.)'},
+{n:'e(i).',q:'Navigate from Home to Report.pdf',a:'Open <b>Home → Documents → Projects → Project1 → Report.pdf</b>, double-clicking each folder in turn.'},
+{n:'e(ii).',q:'Full path to Presentation.pptx',a:'<b>/Home/Documents/Projects/Project2/Presentation.pptx</b>\nFrom Home, open Documents, then Projects, then Project2, and open the file.'}
+]},
+{t:'Question 2 – Hardware and safe computing (16 marks)', qs:[
+{n:'a.',q:'The two modes the INS key toggles',a:'1. <b>Insert mode</b>: typed text is <b>added at the cursor</b> and existing text moves to the right.\n2. <b>Overtype (overwrite) mode</b>: typed text <b>replaces</b> the characters to the right of the cursor.'},
+{n:'b.',q:'Main characteristic of ROM',a:'<b>Non-volatile and read-only</b>: its contents (e.g. the BIOS start-up instructions) are <b>kept when the power is off</b> and cannot normally be changed.'},
+{n:'c.',q:'How RAM helps processing (note: RAM = Random Access Memory)',a:'RAM holds the <b>programs and data currently in use</b>, so the CPU can read and write them <b>very quickly</b>, much faster than from the hard disk. More RAM lets more programs run smoothly. It is <b>volatile</b>: it is emptied when the power goes off.\n(The paper wrongly says "Read Access Memory". RAM stands for <b>Random</b> Access Memory.)'},
+{n:'d.',q:'What is a program and how is it structured?',a:'A <b>set of step-by-step instructions</b> written in a programming language that tells the computer how to do a task. Structure: <b>input → process → output</b>, using <b>sequence</b> (one step after another), <b>selection</b> (IF decisions) and <b>iteration</b> (loops), often split into functions.'},
+{n:'e.',q:'Two reasons to save and back up files',a:'1. To avoid <b>losing work</b> after a power cut, crash or accidental deletion.\n2. To <b>recover files</b> after hardware failure, theft or a virus/ransomware attack (keep a copy on a USB drive or in the cloud).'},
+{n:'f.',q:'Three reasons to use antivirus software',a:'1. Stops viruses that <b>delete or corrupt files</b>.\n2. Protects <b>personal information</b> (passwords, bank details) from being stolen.\n3. Keeps the computer <b>running fast</b> and stops infections spreading to other computers on the network or via USB drives.'},
+{n:'g.',q:'Equity issues for people with disabilities, and two strategies',a:'Issues: people with disabilities may <b>not be able to use</b> standard keyboards, mice or screens (blind, deaf or physically impaired users), and special devices are expensive, so they miss out on education and jobs (a <b>digital divide</b>).\nStrategies: 1. <b>Assistive technology</b>: screen readers, magnifiers, voice control, adapted keyboards. 2. <b>Accessible design and policies</b>: captions, high-contrast or large text, government funding or free devices, and training.'}
+]},
+{t:'Question 3 – ICT in society and word processing (16 marks)', qs:[
+{n:'a.',q:'What is piracy?',a:'<b>Illegally copying, sharing or selling software, music or films</b> without the copyright owner\'s permission.'},
+{n:'b.',q:'Three roles of a systems analyst',a:'1. <b>Studies the current system</b> and finds the users\' problems and needs.\n2. <b>Designs a new system</b> (inputs, outputs, files, hardware and software).\n3. <b>Oversees testing, installation and training</b>, and evaluates the system.\nThey connect users and programmers, so organisations get ICT systems that actually solve their problems.'},
+{n:'c.',q:'Two effects of virtual offices',a:'Employees: they can <b>work from home</b> (flexible hours, no travel), but may feel isolated, and work and home life can blur.\nOrganisations: <b>lower costs</b> (less office rent) and they can hire people anywhere, but they need good internet and security, and it is harder to supervise staff.'},
+{n:'d.',q:'Two reasons why file names and extensions matter',a:'1. A clear <b>name</b> makes the file <b>easy to find and organise</b> later.\n2. The <b>extension</b> (.docx, .xlsx, .jpg) tells the computer <b>which program opens the file</b> and tells users what type of file it is.'},
+{n:'e(i).',q:'One format on the title',a:'It is <b>bold</b>, <b>underlined</b> and <b>centred</b> (any one).'},
+{n:'e(ii).',q:'Steps to capitalise the "Spell check…" paragraph',a:'1. <b>Select (highlight)</b> the paragraph.\n2. Go to <b>Home → Change Case (Aa)</b> and choose <b>UPPERCASE</b> (or press <b>Shift + F3</b>, or Ctrl + Shift + A).'},
+{n:'e(iii).',q:'Steps to insert a table of 2 rows × 3 columns',a:'1. Click where the table should go (and delete the highlighted text).\n2. <b>Insert → Table</b>.\n3. Drag over the grid to choose <b>3 columns × 2 rows</b> (or Insert Table…, Columns = 3, Rows = 2, OK).'},
+{n:'e(iv).',q:'Fill in Find and Replace',a:'Find what: <b>Document</b>\nReplace with: <b>Doc</b>\nThen click <b>Replace All</b>.'},
+{n:'e(v).',q:'How many words change?',a:'<b>5</b>: "Document B", "documents" (twice), "DOCUMENT" and "document types". Find is not case-sensitive by default and also matches inside "documents".'}
+]},
+{t:'Question 4 – Spreadsheets (16 marks)', qs:[
+{n:'a.',q:'Name of the active worksheet',a:'<b>Question 4</b> (the sheet tab at the bottom).'},
+{n:'b.',q:'Data type in D5',a:'<b>Text (label)</b>: "CAT (20%)" is a heading, not a number.'},
+{n:'c.',q:'Formula for the average in I22',a:'<b>=AVERAGE(H6:H17)</b> → 71 (848 ÷ 12 = 70.7)'},
+{n:'d.',q:'Total for Jack Boom in H9',a:'<b>=SUM(D9:G9)</b> → 15 + 23 + 38 + 8 = 84'},
+{n:'e.',q:'Highest score in I20',a:'<b>=MAX(H6:H17)</b> → 91'},
+{n:'f.',q:'IF function in I6 with an absolute reference',a:'<b>=IF(H6>=$D$4,"Pass","Fail")</b>\nThe $ signs keep D4 fixed when you copy the formula down the column.'},
+{n:'g.',q:'COUNTIF for students getting free fees (D23)',a:'<b>=COUNTIF(J6:J17,"Yes")</b> → 4'},
+{n:'h.',q:'Two benefits of spreadsheets in business',a:'1. <b>Automatic calculation</b>: formulas recalculate instantly when data changes, so they are fast and accurate.\n2. <b>Charts, sorting and filtering</b> make it easy to analyse data and spot trends for decisions.'}
+]},
+{t:'Question 5 – Databases and SQL (16 marks)', qs:[
+{n:'a(i).',q:'Number of fields in the Information table',a:'<b>8</b>: Student_ID, Student_FN, Student_SN, Student_Ge, Student_DOB, Boarding_St, Student_Illness, Gurdian_ID.'},
+{n:'a(ii).',q:'Field type of Boarding_St',a:'<b>Yes/No (Boolean)</b>: a tick box.'},
+{n:'a(iii).',q:'SQL: names of boys admitted to boarding',a:'<b>SELECT Student_FN, Student_SN\nFROM Information\nWHERE Student_Ge = Yes AND Boarding_St = Yes;</b>\n(Student_Ge ticked = male.) Result from the table: Richard, Kaata, Anna.\n⚠ The MOE scheme writes "WHRE" and "==", which are not valid SQL. Use WHERE and a single =.'},
+{n:'a(iv).',q:'Delete Student_ID 20004',a:'<b>DELETE FROM Information\nWHERE Student_ID = 20004;</b>'},
+{n:'a(v).',q:'Count all students',a:'<b>SELECT COUNT(*) AS TotalStudents\nFROM Information;</b> → 10'},
+{n:'b.',q:'Why data integrity matters; two practices',a:'Data integrity means the data is <b>accurate, complete and consistent</b>. Wrong data leads to wrong decisions (e.g. the wrong exam results or medical information).\nPractices: 1. <b>Validation rules</b> (data types, range checks, required fields). 2. <b>Primary keys and relationships</b> (referential integrity) to stop duplicates. Also: regular backups and user access controls.'},
+{n:'c(i).',q:'Sort products by name, ascending',a:'<b>SELECT * FROM Products\nORDER BY ProductName ASC;</b>'},
+{n:'c(ii).',q:'Resulting Product_ID order',a:'Banana, Cabbage, Cucumber, Orange → <b>13, 11, 12, 14</b>'}
+]}
 ]}
 ]});
