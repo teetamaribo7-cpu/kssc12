@@ -6,7 +6,7 @@ var SHEETS = {
   che: {title:'Periodic Table (given in the exam)', imgs:['periodic-1'], wide:true}
 };
 var WRONG = load('wrong', {});
-(function(){ var V={phy:1,che:1,bio:1}, done=load('restruct',{}), sc=load('scores',{}), w=load('wrong',{}), ch=false;
+(function(){ var V={phy:1,che:1,bio:1,mat:1}, done=load('restruct',{}), sc=load('scores',{}), w=load('wrong',{}), ch=false;
   if(load('phy19',0)===1&&!done.phy) done.phy=1;
   Object.keys(V).forEach(function(id){ if((done[id]||0)<V[id]){ Object.keys(sc).forEach(function(k){ if(k.indexOf(id+'|')===0) delete sc[k]; }); Object.keys(w).forEach(function(k){ if(k.indexOf(id+'|')===0) delete w[k]; }); done[id]=V[id]; ch=true; } });
   if(ch){ save('scores',sc); save('wrong',w); save('restruct',done); WRONG=w; if(typeof SC!=='undefined') SC=sc; } })();   // key "subj|t|i" -> 1
@@ -28,7 +28,7 @@ VIEWS.subject = function(v, id){
     var ST=STRANDS[id];
     if(ST){ ST.forEach(function(g,k){ var done=0; g[1].forEach(function(i){var r=SC[id+'|'+i]; if(r&&r.best>=.5)done++;});
         h+='<details class="strand"'+(k===0?' open':'')+'><summary><span class="sn">Strand '+(k+1)+'</span><b>'+esc(g[0])+'</b><small>'+g[1].length+' topic'+(g[1].length>1?'s':'')+' · '+done+' passed</small></summary>';
-        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^(Topic \d|[IVX]+\.\d)/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); });
+        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^(Topic \d|[IVX]+\.\d|\d\.\d)/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); });
         var nq=0; g[1].forEach(function(i){ nq+=(s.topics[i].quiz||[]).length; }); var sr=SC[id+'|s'+k], sp=sr?Math.round(100*sr.best):null;
         h+='<button class="row strandq" onclick="show(\'quiz\',{strand:\''+id+'\',k:'+k+'})"><span style="font-size:20px">🧩</span><span class="grow"><b>Strand '+(k+1)+' quiz</b><small>'+Math.min(20,nq)+' mixed questions from all topics in this strand'+(sp!==null?' · best '+sp+'%'+(sp>=50?' ✅':''):'')+'</small></span>›</button></details>'; }); }
     else s.topics.forEach(function(t,i){ h+=row(t,i,(i+1)+'.'); });
@@ -53,7 +53,7 @@ VIEWS.subject = function(v, id){
 // ---------- strands (PSSC/KSSC prescription structure) ----------
 var STRANDS={
  eng:[['Reading and language skills',[0,1,2,6]],['Formal writing',[3]],['Literature essay skills',[4,5]],['Literature guide – prescribed texts',[7,8,9,10,11]]],
- mat:[['Algebra',[0,1]],['Coordinate geometry',[2]],['Sequences and series',[3]],['Statistics and probability',[4]],['Functions and graphs',[5]],['Calculus',[6,7]],['Trigonometry',[8]]],
+ mat:[['Topic 1: Algebra (14%)',[0,1,2,3]],['Topic 2: Coordinate geometry (8%)',[4,5]],['Topic 3: Sequences and series (8%)',[6,7]],['Topic 4: Probability (8%)',[8,9]],['Topic 5: Statistics (internal assessment)',[10]],['Topic 6: Graphs of functions (8%)',[11]],['Topic 7: Calculus (12%)',[12,13,14]],['Topic 8: Trigonometry (12%)',[15,16,17]]],
  phy:[['Light and waves (Topics 1–4)',[0,1,2,3]],['Mechanics (Topics 5–12)',[4,5,6,7,8,9,10,11]],['Gases and kinetic theory (Topic 13)',[12]],['Electricity and magnetism (Topics 14–18)',[13,14,15,16,17]],['The atom and radioactivity (Topic 19)',[18]]],
  che:[['I. Atomic structure and bonding (15%)',[0,1,2]],['II. Quantitative chemistry (20%)',[3,4,5,6]],['III. Organic chemistry (28%)',[7,8,9,10,11,12,13]],['IV. Inorganic chemistry (10%)',[14,15]],['V. Principles of physical chemistry (17%)',[16,17,18,19]],['VI. Oxidation and reduction (10%)',[20,21]]],
  bio:[['I. Cellular biology (20%)',[0,1,2,3,4]],['II. Genetics (15%)',[5,6,7,8]],['III. Organism level biology (35%)',[9,10,11,12,13,14,15,16]],['IV. Environmental biology (20%)',[17,18,19,20,21]]],
