@@ -25,7 +25,9 @@ VIEWS.subject = function(v, id){
     var ST=STRANDS[id];
     if(ST){ ST.forEach(function(g,k){ var done=0; g[1].forEach(function(i){var r=SC[id+'|'+i]; if(r&&r.best>=.5)done++;});
         h+='<details class="strand"'+(k===0?' open':'')+'><summary><span class="sn">Strand '+(k+1)+'</span><b>'+esc(g[0])+'</b><small>'+g[1].length+' topic'+(g[1].length>1?'s':'')+' · '+done+' passed</small></summary>';
-        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^Topic \d/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); }); h+='</details>'; }); }
+        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^Topic \d/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); });
+        var nq=0; g[1].forEach(function(i){ nq+=(s.topics[i].quiz||[]).length; }); var sr=SC[id+'|s'+k], sp=sr?Math.round(100*sr.best):null;
+        h+='<button class="row strandq" onclick="show(\'quiz\',{strand:\''+id+'\',k:'+k+'})"><span style="font-size:20px">🧩</span><span class="grow"><b>Strand '+(k+1)+' quiz</b><small>'+Math.min(20,nq)+' mixed questions from all topics in this strand'+(sp!==null?' · best '+sp+'%'+(sp>=50?' ✅':''):'')+'</small></span>›</button></details>'; }); }
     else s.topics.forEach(function(t,i){ h+=row(t,i,(i+1)+'.'); });
   } else if(tab==='p'){
     if(!s.papers.length) h+='<div class="card">Past paper solutions are coming soon.</div>';
@@ -92,6 +94,9 @@ VIEWS.quiz = function(v, a){
   var items=[];
   if(Array.isArray(a)){ var t=SUBJECTS[a[0]].topics[a[1]]; setTitle('Quiz: '+t.t);
     items=t.quiz.map(function(q,i){return {s:a[0],t:a[1],i:i};}); }
+  else if(a.strand){ var g=STRANDS[a.strand][a.k]; setTitle('Strand quiz: '+g[0]);
+    g[1].forEach(function(ti){ var tp=SUBJECTS[a.strand].topics[ti]; (tp.quiz||[]).forEach(function(q,i){ items.push({s:a.strand,t:ti,i:i}); }); });
+    QZ={a:a, items:shuffle(items).slice(0,20), i:0, score:0}; if(!QZ.items.length){ v.innerHTML='<div class="card">No questions yet.</div>'; return; } return quizStep(); }
   else { setTitle('Review: '+meta(a.review).name);
     items=Object.keys(WRONG).filter(function(k){return k.indexOf(a.review+'|')===0;}).map(function(k){var p=k.split('|');return {s:p[0],t:+p[1],i:+p[2]};})
       .filter(function(x){ var tp=SUBJECTS[x.s].topics[x.t]; return tp&&tp.quiz&&tp.quiz[x.i]; }); }
@@ -116,9 +121,9 @@ function answer(b){
   $('fb').innerHTML='<div class="explain"><b>'+(k===q.a?'✅ Correct!':'❌ Not quite.')+'</b> '+(q.e||'')+'</div><button class="btn wide" onclick="QZ.i++;quizStep()">'+(QZ.i+1<QZ.items.length?'Next ›':'See my score')+'</button>';
 }
 function quizEnd(){
-  var a=QZ.a, n=QZ.items.length, f=QZ.score/n, review=!Array.isArray(a);
-  var subj=review?a.review:a[0], topic=review?'Review of mistakes':SUBJECTS[a[0]].topics[a[1]].t;
-  if(!review){ var key=a[0]+'|'+a[1], r=SC[key]||{best:0,tries:0}; r.best=Math.max(r.best,f); r.last=f; r.tries++; SC[key]=r; save('scores',SC); }
+  var a=QZ.a, n=QZ.items.length, f=QZ.score/n, strand=!Array.isArray(a)&&!!a.strand, review=!Array.isArray(a)&&!strand;
+  var subj=strand?a.strand:review?a.review:a[0], topic=strand?'Strand quiz: '+STRANDS[a.strand][a.k][0]:review?'Review of mistakes':SUBJECTS[a[0]].topics[a[1]].t;
+  if(!review){ var key=strand?subj+'|s'+a.k:a[0]+'|'+a[1], r=SC[key]||{best:0,tries:0}; r.best=Math.max(r.best,f); r.last=f; r.tries++; SC[key]=r; save('scores',SC); }
   STATS.quizzes++; if(f===1) STATS.perfect++; save('stats',STATS);
   queueResult({date:new Date().toISOString(), device:deviceId(), name:P.name, school:P.school, cls:P.cls, stream:P.stream,
     subject:meta(subj).name, topic:topic, score:QZ.score, total:n, percent:Math.round(100*f)});
@@ -126,7 +131,7 @@ function quizEnd(){
   var done=!review && subjectDone(subj);
   $('view').innerHTML='<div class="card" style="text-align:center"><div class="big">'+QZ.score+' / '+n+'</div><p>'+Math.round(100*f)+'% · '+msg+'</p></div>'+
     (done?'<button class="btn gold wide" onclick="show(\'cert\',\''+subj+'\')">🎓 You passed every topic – get your certificate</button>':'')+
-    '<button class="btn wide" onclick="show(\'quiz\','+(review?'{review:\''+subj+'\'}':'[\''+a[0]+'\','+a[1]+']')+',true)">Try again</button><button class="btn ghost wide" onclick="goBack();">Back</button>';
+    '<button class="btn wide" onclick="show(\'quiz\','+(strand?'{strand:\''+subj+'\',k:'+a.k+'}':review?'{review:\''+subj+'\'}':'[\''+a[0]+'\','+a[1]+']')+',true)">'+(strand?'New set of questions':'Try again')+'</button><button class="btn ghost wide" onclick="goBack();">Back</button>';
 }
 
 // ---------- badges & certificates ----------
@@ -198,3 +203,50 @@ function showNews(d){
 }
 var _home=VIEWS.home;
 VIEWS.home = function(v){ _home(v); if(!P||!P.stream) return; var d=document.createElement('div'); d.id='news'; v.insertBefore(d, v.children[1]||null); checkNews(); };
+
+// ---------- floating scientific calculator ----------
+var CALC={e:'',ans:0,deg:true,shift:false,open:false};
+function calcInit(){
+  if(document.getElementById('calcBtn')) return;
+  var b=document.createElement('button'); b.id='calcBtn'; b.innerHTML='🧮'; b.title='Calculator'; b.onclick=calcToggle; document.body.appendChild(b);
+  var p=document.createElement('div'); p.id='calc'; document.body.appendChild(p); calcDraw();
+}
+function calcToggle(){ CALC.open=!CALC.open; document.getElementById('calc').classList.toggle('on',CALC.open); document.body.classList.toggle('calcon',CALC.open); }
+var CK=[['SHIFT','DEG','(',')','DEL','AC'],['sin','cos','tan','π','e','ANS'],['x²','√','xʸ','log','ln','1/x'],['7','8','9','÷','×10ˣ','n!'],['4','5','6','×','%','±'],['1','2','3','−','(−)',''],['0','.','EXP','+','=','']];
+function calcLabel(k){ if(!CALC.shift) return k; return {sin:'sin⁻¹',cos:'cos⁻¹',tan:'tan⁻¹','x²':'x³','√':'∛',log:'10ˣ',ln:'eˣ'}[k]||k; }
+function calcDraw(){
+  var p=document.getElementById('calc'); if(!p) return;
+  var h='<div class="cbar"><b>Scientific calculator</b><span>'+(CALC.deg?'DEG':'RAD')+(CALC.shift?' · SHIFT':'')+'</span><button onclick="calcToggle()">✕</button></div><div class="cdisp"><div class="cexp">'+(CALC.e||'&nbsp;')+'</div><div class="cres" id="cres">'+calcFmt(CALC.ans)+'</div></div><div class="ckeys">';
+  CK.forEach(function(r){ r.forEach(function(k){ if(!k){h+='<span></span>';return;} var cls=/^[0-9.]$/.test(k)?'n':k==='='?'eq':(k==='AC'||k==='DEL')?'d':(k==='SHIFT'&&CALC.shift)?'on':'';
+    h+='<button class="'+cls+'" onclick="calcKey(\''+k+'\')">'+calcLabel(k)+'</button>'; }); });
+  p.innerHTML=h+'</div>';
+}
+function calcFmt(x){ if(typeof x!=='number') return x; if(!isFinite(x)) return 'Math ERROR'; if(x!==0&&(Math.abs(x)>=1e10||Math.abs(x)<1e-6)) return x.toExponential(6).replace(/\.?0+e/,'e').replace('e+','e').replace('e','×10^'); return String(+x.toPrecision(10)); }
+function calcKey(k){
+  var s=CALC.shift, ins=function(t){ CALC.e+=t; };
+  if(k==='SHIFT'){ CALC.shift=!CALC.shift; return calcDraw(); }
+  if(k==='DEG'){ CALC.deg=!CALC.deg; return calcDraw(); }
+  if(k==='AC'){ CALC.e=''; CALC.ans=CALC.ans; document.getElementById('cres').textContent='0'; CALC.shift=false; return calcDraw(); }
+  if(k==='DEL'){ CALC.e=CALC.e.replace(/(sin⁻¹\(|cos⁻¹\(|tan⁻¹\(|sin\(|cos\(|tan\(|log\(|ln\(|√\(|∛\(|Ans|×10\^|.)$/,''); return calcDraw(); }
+  if(k==='='){ try{ var v=calcEval(CALC.e); CALC.ans=v; CALC.e=CALC.e; }catch(err){ CALC.ans='Syntax ERROR'; } CALC.shift=false; calcDraw(); return; }
+  var map={'sin':s?'sin⁻¹(':'sin(','cos':s?'cos⁻¹(':'cos(','tan':s?'tan⁻¹(':'tan(','π':'π','e':'e','ANS':'Ans','x²':s?'³':'²','√':s?'∛(':'√(','xʸ':'^','log':s?'10^(':'log(','ln':s?'e^(':'ln(','1/x':'⁻¹','÷':'÷','×10ˣ':'×10^','EXP':'×10^','n!':'!','×':'×','%':'%','±':'(−)','−':'−','+':'+','(−)':'(−)','(':'(',')':')'};
+  if(CALC.e===''&&/^[÷×−+^²³⁻!%]/.test(map[k]||'')) ins('Ans');
+  ins(map[k]!==undefined?map[k]:k); CALC.shift=false; calcDraw();
+}
+function calcEval(ex){
+  var d=CALC.deg?Math.PI/180:1, js=ex;
+  js=js.replace(/Ans/g,'('+(typeof CALC.ans==='number'?CALC.ans:0)+')').replace(/×10\^/g,'*10^').replace(/π/g,'(Math.PI)').replace(/(^|[^a-z])e(?![a-z])/g,'$1(Math.E)')
+   .replace(/sin⁻¹\(/g,'ASIN(').replace(/cos⁻¹\(/g,'ACOS(').replace(/tan⁻¹\(/g,'ATAN(').replace(/÷/g,'/').replace(/×/g,'*').replace(/−/g,'-').replace(/\(-\)/g,'-').replace(/²/g,'^2').replace(/³/g,'^3').replace(/⁻¹/g,'^(-1)').replace(/%/g,'/100')
+   .replace(/sin⁻¹\(/g,'ASIN(').replace(/cos⁻¹\(/g,'ACOS(').replace(/tan⁻¹\(/g,'ATAN(').replace(/sin\(/g,'SIN(').replace(/cos\(/g,'COS(').replace(/tan\(/g,'TAN(')
+   .replace(/log\(/g,'LOG(').replace(/ln\(/g,'LN(').replace(/√\(/g,'SQRT(').replace(/∛\(/g,'CBRT(');
+  js=js.replace(/(\d+(?:\.\d+)?|\))!/g,function(m,a){ return 'FACT('+a+')'; });
+  if(/[^0-9.+\-*/^() A-Z_a-z,]/.test(js)) throw 'bad';
+  js=js.replace(/\^/g,'**').replace(/(\d|\))\s*(\(|[A-Z]|Math)/g,'$1*$2');
+  var open=(js.match(/\(/g)||[]).length-(js.match(/\)/g)||[]).length; while(open-->0) js+=')';
+  var f=new Function('SIN','COS','TAN','ASIN','ACOS','ATAN','LOG','LN','SQRT','CBRT','FACT','return ('+js+');');
+  var Z=function(v){return Math.abs(v)<1e-12?0:v;}; var r=f(function(x){return Z(Math.sin(x*d));},function(x){return Z(Math.cos(x*d));},function(x){return Z(Math.tan(x*d));},
+    function(x){return Math.asin(x)/d;},function(x){return Math.acos(x)/d;},function(x){return Math.atan(x)/d;},
+    Math.log10,Math.log,Math.sqrt,Math.cbrt,function(n){ if(n<0||n%1) return NaN; var r=1; for(var i=2;i<=n;i++) r*=i; return r; });
+  return r;
+}
+document.addEventListener('DOMContentLoaded',calcInit); if(document.readyState!=='loading') setTimeout(calcInit,0);

@@ -76,3 +76,18 @@ details.strand .row{margin:0;border-radius:0;box-shadow:none;border-bottom:1px s
 .strandtag{font-size:12px;color:var(--navy);background:#fff8e1;border:1px solid var(--gold);border-radius:20px;display:inline-block;padding:3px 10px;margin-top:8px}
 .toc{background:#f4f6fb;border-radius:10px;padding:8px 10px;margin-bottom:6px}.toc b{display:block;font-size:13px;color:var(--mute)}
 .toc a{display:block;color:var(--navy2);text-decoration:none;padding:3px 0;font-size:14px}.toc a::before{content:'› ';color:var(--gold)}
+
+#calcBtn{position:fixed;right:14px;bottom:18px;z-index:40;width:54px;height:54px;border-radius:50%;border:2px solid var(--gold);background:var(--navy);color:#fff;font-size:26px;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+#calc{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#1c2433;color:#fff;border-radius:16px 16px 0 0;padding:6px 8px 10px;box-shadow:0 -4px 18px rgba(0,0,0,.35);transform:translateY(105%);transition:transform .2s;max-width:520px;margin:0 auto}
+#calc.on{transform:none}
+body.calcon #view{padding-bottom:56vh}
+body.calcon #calcBtn{display:none}
+#calc .cbar{display:flex;align-items:center;gap:8px;font-size:13px;padding:2px 4px}#calc .cbar span{flex:1;color:var(--gold);font-size:12px}
+#calc .cbar button{background:#3a465e;color:#fff;border:0;border-radius:8px;padding:4px 10px;font-size:15px}
+#calc .cdisp{background:#c9d6b8;color:#111;border-radius:8px;padding:4px 8px;margin:4px 0 6px;font-family:monospace}
+#calc .cexp{font-size:14px;min-height:18px;word-break:break-all}#calc .cres{font-size:22px;text-align:right;font-weight:bold}
+#calc .ckeys{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+#calc .ckeys button{border:0;border-radius:7px;padding:8px 0;font-size:14px;background:#3a465e;color:#fff}
+#calc .ckeys button.n{background:#e9edf3;color:#111;font-size:16px}#calc .ckeys button.eq{background:var(--gold);color:#111;font-weight:bold}
+#calc .ckeys button.d{background:#c0392b}#calc .ckeys button.on{background:var(--gold);color:#111}
+.row.strandq{background:#fff8e1}
