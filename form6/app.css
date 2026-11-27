@@ -55,3 +55,13 @@ table.lb{width:100%;border-collapse:collapse;font-size:14px}table.lb th,table.lb
 .cert .cc{margin-top:14px;font-size:12px;color:var(--mute)}
 .exambar{position:sticky;top:58px;z-index:4;display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border-radius:12px;padding:8px 12px;margin-bottom:10px;font-weight:700}
 .exam .sol{display:none!important}.exam .card>.btn.ghost{display:none}
+
+.notes h3{color:var(--navy,#0b1f4b);margin:16px 0 6px;font-size:17px;border-bottom:2px solid #e7ecf6;padding-bottom:3px}
+.notes h4{margin:10px 0 4px;font-size:15px;color:#33456e}
+.fig{margin:10px 0;text-align:center;background:#f7f9fd;border:1px solid #e1e7f3;border-radius:10px;padding:8px}
+.fig svg{width:100%;max-width:420px;height:auto}
+.fig .cap{font-size:12.5px;color:#5a6785;margin-top:4px}
+.ex{background:#eef7ee;border-left:4px solid #3a9b4a;padding:8px 10px;border-radius:8px;margin:8px 0}
+.ex b.t{display:block;color:#2c7a39;margin-bottom:2px}
+.warn{background:#fdeeee;border-left:4px solid #d64545;padding:8px 10px;border-radius:8px;margin:8px 0}
+.tip{background:#eaf3fc;border-left:4px solid #3b7dd8;padding:8px 10px;border-radius:8px;margin:8px 0}

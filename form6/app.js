@@ -24,6 +24,7 @@ var STREAMS = {
   Arts:     {core:['eng','mat','geo','his','ict'], options:[]}
 };
 function addSubject(s){ SUBJECTS[s.id]=s; }
+function setNotes(id,arr){ var S=SUBJECTS[id]; if(!S) return; arr.forEach(function(h,i){ if(h&&S.topics[i]) S.topics[i].notes=h; }); }
 
 // ---------- storage ----------
 function load(k,d){ try{ var v=localStorage.getItem('f6_'+k); return v?JSON.parse(v):d; }catch(e){ return d; } }
