@@ -6,7 +6,10 @@ var SHEETS = {
   che: {title:'Periodic Table (given in the exam)', imgs:['periodic-1'], wide:true}
 };
 var WRONG = load('wrong', {});
-if(load('phy19',0)!==1){ (function(){ var sc=load('scores',{}),w=load('wrong',{}); Object.keys(sc).forEach(function(k){ if(k.indexOf('phy|')===0) delete sc[k]; }); Object.keys(w).forEach(function(k){ if(k.indexOf('phy|')===0) delete w[k]; }); save('scores',sc); save('wrong',w); WRONG=w; if(typeof SC!=='undefined') SC=sc; save('phy19',1); })(); }   // key "subj|t|i" -> 1
+(function(){ var V={phy:1,che:1}, done=load('restruct',{}), sc=load('scores',{}), w=load('wrong',{}), ch=false;
+  if(load('phy19',0)===1&&!done.phy) done.phy=1;
+  Object.keys(V).forEach(function(id){ if((done[id]||0)<V[id]){ Object.keys(sc).forEach(function(k){ if(k.indexOf(id+'|')===0) delete sc[k]; }); Object.keys(w).forEach(function(k){ if(k.indexOf(id+'|')===0) delete w[k]; }); done[id]=V[id]; ch=true; } });
+  if(ch){ save('scores',sc); save('wrong',w); save('restruct',done); WRONG=w; if(typeof SC!=='undefined') SC=sc; } })();   // key "subj|t|i" -> 1
 var STATS = load('stats', {quizzes:0, perfect:0});
 
 // ---------- subject page with sheets + review ----------
@@ -25,7 +28,7 @@ VIEWS.subject = function(v, id){
     var ST=STRANDS[id];
     if(ST){ ST.forEach(function(g,k){ var done=0; g[1].forEach(function(i){var r=SC[id+'|'+i]; if(r&&r.best>=.5)done++;});
         h+='<details class="strand"'+(k===0?' open':'')+'><summary><span class="sn">Strand '+(k+1)+'</span><b>'+esc(g[0])+'</b><small>'+g[1].length+' topic'+(g[1].length>1?'s':'')+' · '+done+' passed</small></summary>';
-        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^Topic \d/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); });
+        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^(Topic \d|[IVX]+\.\d)/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); });
         var nq=0; g[1].forEach(function(i){ nq+=(s.topics[i].quiz||[]).length; }); var sr=SC[id+'|s'+k], sp=sr?Math.round(100*sr.best):null;
         h+='<button class="row strandq" onclick="show(\'quiz\',{strand:\''+id+'\',k:'+k+'})"><span style="font-size:20px">🧩</span><span class="grow"><b>Strand '+(k+1)+' quiz</b><small>'+Math.min(20,nq)+' mixed questions from all topics in this strand'+(sp!==null?' · best '+sp+'%'+(sp>=50?' ✅':''):'')+'</small></span>›</button></details>'; }); }
     else s.topics.forEach(function(t,i){ h+=row(t,i,(i+1)+'.'); });
@@ -52,11 +55,11 @@ var STRANDS={
  eng:[['Reading and language skills',[0,1,2,6]],['Formal writing',[3]],['Literature essay skills',[4,5]],['Literature guide – prescribed texts',[7,8,9,10,11]]],
  mat:[['Algebra',[0,1]],['Coordinate geometry',[2]],['Sequences and series',[3]],['Statistics and probability',[4]],['Functions and graphs',[5]],['Calculus',[6,7]],['Trigonometry',[8]]],
  phy:[['Light and waves (Topics 1–4)',[0,1,2,3]],['Mechanics (Topics 5–12)',[4,5,6,7,8,9,10,11]],['Gases and kinetic theory (Topic 13)',[12]],['Electricity and magnetism (Topics 14–18)',[13,14,15,16,17]],['The atom and radioactivity (Topic 19)',[18]]],
- che:[['Atomic structure and bonding',[0,1]],['Quantitative chemistry',[2]],['Inorganic chemistry',[3]],['Organic chemistry',[4,5,6]],['Physical chemistry',[7,8]],['Redox chemistry',[9]]],
+ che:[['I. Atomic structure and bonding (15%)',[0,1,2]],['II. Quantitative chemistry (20%)',[3,4,5,6]],['III. Organic chemistry (28%)',[7,8,9,10,11,12,13]],['IV. Inorganic chemistry (10%)',[14,15]],['V. Principles of physical chemistry (17%)',[16,17,18,19]],['VI. Oxidation and reduction (10%)',[20,21]]],
  bio:[['Cellular biology',[0,1,2,3]],['Genetics',[4,5]],['Organism biology',[6,7,8]],['Ecology and the environment',[9]]],
  ict:[['Computer systems',[0,1]],['Application software',[2,3,4]],['Computers in society',[5]]],
  eco:[['Basic economic concepts',[0]],['Markets',[1]],['Money and inflation',[2,3]],['International trade and payments',[4]],['Economic functions of government',[5,6]],['Economic development',[7]]],
- acc:[['Conceptual basis',[0]],['Accounting process',[1,2]],['Accounting reports',[3,4]],['Analysis and decisions',[5]],['Accounting systems',[6,7]]],
+ acc:[['Section I – Conceptual basis of accounting (10–15%)',[0]],['Section II – Processing (15–20%)',[1,2]],['Section III – Accounting systems (25–30%)',[6,7]],['Section IV – Accounting reports (25–30%)',[3,4]],['Section V – Analysis, interpretation and decisions (10–12%)',[5]]],
  geo:[['Geography skills',[0]],['Natural hazards',[1]],['Resources',[2]],['Population',[3]],['Urbanisation',[4]],['Tourism',[5]]],
  his:[['History skills',[0]],['Compulsory: the search for security, 1945–1990',[1]],['Options (choose two)',[2,3,4,5,6]]]
 };
