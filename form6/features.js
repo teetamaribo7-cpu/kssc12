@@ -5,7 +5,8 @@ var SHEETS = {
   phy: {title:'KSSC Physics equations sheet (g = 10 m/s²)', imgs:['physics-1','physics-2','physics-3']},
   che: {title:'Periodic Table (given in the exam)', imgs:['periodic-1'], wide:true}
 };
-var WRONG = load('wrong', {});   // key "subj|t|i" -> 1
+var WRONG = load('wrong', {});
+if(load('phy19',0)!==1){ (function(){ var sc=load('scores',{}),w=load('wrong',{}); Object.keys(sc).forEach(function(k){ if(k.indexOf('phy|')===0) delete sc[k]; }); Object.keys(w).forEach(function(k){ if(k.indexOf('phy|')===0) delete w[k]; }); save('scores',sc); save('wrong',w); WRONG=w; if(typeof SC!=='undefined') SC=sc; save('phy19',1); })(); }   // key "subj|t|i" -> 1
 var STATS = load('stats', {quizzes:0, perfect:0});
 
 // ---------- subject page with sheets + review ----------
@@ -20,11 +21,11 @@ VIEWS.subject = function(v, id){
     if(nw) h+='<button class="row" style="border-left:5px solid var(--bad)" onclick="show(\'quiz\',{review:\''+id+'\'})"><span style="font-size:22px">🔁</span><span class="grow"><b>Review my mistakes</b><small>'+nw+' question(s) you got wrong – try again</small></span>›</button>';
     if(subjectDone(id)) h+='<button class="row" style="border-left:5px solid var(--gold)" onclick="show(\'cert\',\''+id+'\')"><span style="font-size:22px">🎓</span><span class="grow"><b>Your certificate</b><small>All topics passed – view and screenshot it</small></span>›</button>';
     var row=function(t,i,n){ var r=SC[id+'|'+i]; var pc=r?Math.round(100*r.best):null;
-      return '<button class="row" onclick="show(\'topic\',[\''+id+'\','+i+'])"><span class="grow"><b>'+n+' '+esc(t.t)+'</b><small>'+(t.quiz?t.quiz.length:0)+' quiz questions'+(pc!==null?' · best '+pc+'%'+(pc>=50?' ✅':''):'')+'</small></span>›</button>'; };
+      return '<button class="row" onclick="show(\'topic\',[\''+id+'\','+i+'])"><span class="grow"><b>'+n+' '+esc(t.t)+'</b><small>'+(t.w?'Exam weight '+t.w+'% · ':'')+(t.quiz?t.quiz.length:0)+' quiz questions'+(pc!==null?' · best '+pc+'%'+(pc>=50?' ✅':''):'')+'</small></span>›</button>'; };
     var ST=STRANDS[id];
     if(ST){ ST.forEach(function(g,k){ var done=0; g[1].forEach(function(i){var r=SC[id+'|'+i]; if(r&&r.best>=.5)done++;});
         h+='<details class="strand"'+(k===0?' open':'')+'><summary><span class="sn">Strand '+(k+1)+'</span><b>'+esc(g[0])+'</b><small>'+g[1].length+' topic'+(g[1].length>1?'s':'')+' · '+done+' passed</small></summary>';
-        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,(k+1)+'.'+(j+1)); }); h+='</details>'; }); }
+        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,/^Topic \d/.test(s.topics[i].t)?'':(k+1)+'.'+(j+1)); }); h+='</details>'; }); }
     else s.topics.forEach(function(t,i){ h+=row(t,i,(i+1)+'.'); });
   } else if(tab==='p'){
     if(!s.papers.length) h+='<div class="card">Past paper solutions are coming soon.</div>';
@@ -48,7 +49,7 @@ VIEWS.subject = function(v, id){
 var STRANDS={
  eng:[['Reading and language skills',[0,1,2,6]],['Formal writing',[3]],['Literature essay skills',[4,5]],['Literature guide – prescribed texts',[7,8,9,10,11]]],
  mat:[['Algebra',[0,1]],['Coordinate geometry',[2]],['Sequences and series',[3]],['Statistics and probability',[4]],['Functions and graphs',[5]],['Calculus',[6,7]],['Trigonometry',[8]]],
- phy:[['Waves and optics',[0,1,2]],['Mechanics',[3,4,5]],['Thermal physics',[6]],['Electricity and magnetism',[7,8]],['Atomic and nuclear physics',[9]]],
+ phy:[['Light and waves (Topics 1–4)',[0,1,2,3]],['Mechanics (Topics 5–12)',[4,5,6,7,8,9,10,11]],['Gases and kinetic theory (Topic 13)',[12]],['Electricity and magnetism (Topics 14–18)',[13,14,15,16,17]],['The atom and radioactivity (Topic 19)',[18]]],
  che:[['Atomic structure and bonding',[0,1]],['Quantitative chemistry',[2]],['Inorganic chemistry',[3]],['Organic chemistry',[4,5,6]],['Physical chemistry',[7,8]],['Redox chemistry',[9]]],
  bio:[['Cellular biology',[0,1,2,3]],['Genetics',[4,5]],['Organism biology',[6,7,8]],['Ecology and the environment',[9]]],
  ict:[['Computer systems',[0,1]],['Application software',[2,3,4]],['Computers in society',[5]]],
