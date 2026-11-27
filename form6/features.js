@@ -19,8 +19,13 @@ VIEWS.subject = function(v, id){
     var nw=Object.keys(WRONG).filter(function(k){return k.indexOf(id+'|')===0;}).length;
     if(nw) h+='<button class="row" style="border-left:5px solid var(--bad)" onclick="show(\'quiz\',{review:\''+id+'\'})"><span style="font-size:22px">🔁</span><span class="grow"><b>Review my mistakes</b><small>'+nw+' question(s) you got wrong – try again</small></span>›</button>';
     if(subjectDone(id)) h+='<button class="row" style="border-left:5px solid var(--gold)" onclick="show(\'cert\',\''+id+'\')"><span style="font-size:22px">🎓</span><span class="grow"><b>Your certificate</b><small>All topics passed – view and screenshot it</small></span>›</button>';
-    s.topics.forEach(function(t,i){ var r=SC[id+'|'+i]; var pc=r?Math.round(100*r.best):null;
-      h+='<button class="row" onclick="show(\'topic\',[\''+id+'\','+i+'])"><span class="grow"><b>'+(i+1)+'. '+esc(t.t)+'</b><small>'+(t.quiz?t.quiz.length:0)+' quiz questions'+(pc!==null?' · best '+pc+'%'+(pc>=50?' ✅':''):'')+'</small></span>›</button>'; });
+    var row=function(t,i,n){ var r=SC[id+'|'+i]; var pc=r?Math.round(100*r.best):null;
+      return '<button class="row" onclick="show(\'topic\',[\''+id+'\','+i+'])"><span class="grow"><b>'+n+' '+esc(t.t)+'</b><small>'+(t.quiz?t.quiz.length:0)+' quiz questions'+(pc!==null?' · best '+pc+'%'+(pc>=50?' ✅':''):'')+'</small></span>›</button>'; };
+    var ST=STRANDS[id];
+    if(ST){ ST.forEach(function(g,k){ var done=0; g[1].forEach(function(i){var r=SC[id+'|'+i]; if(r&&r.best>=.5)done++;});
+        h+='<details class="strand"'+(k===0?' open':'')+'><summary><span class="sn">Strand '+(k+1)+'</span><b>'+esc(g[0])+'</b><small>'+g[1].length+' topic'+(g[1].length>1?'s':'')+' · '+done+' passed</small></summary>';
+        g[1].forEach(function(i,j){ h+=row(s.topics[i],i,(k+1)+'.'+(j+1)); }); h+='</details>'; }); }
+    else s.topics.forEach(function(t,i){ h+=row(t,i,(i+1)+'.'); });
   } else if(tab==='p'){
     if(!s.papers.length) h+='<div class="card">Past paper solutions are coming soon.</div>';
     s.papers.forEach(function(p,i){ var n=0; p.secs.forEach(function(x){n+=x.qs.length;});
@@ -39,10 +44,27 @@ VIEWS.subject = function(v, id){
   v.innerHTML=h;
 };
 
+// ---------- strands (PSSC/KSSC prescription structure) ----------
+var STRANDS={
+ eng:[['Reading and language skills',[0,1,2,6]],['Formal writing',[3]],['Literature essay skills',[4,5]],['Literature guide – prescribed texts',[7,8,9,10,11]]],
+ mat:[['Algebra',[0,1]],['Coordinate geometry',[2]],['Sequences and series',[3]],['Statistics and probability',[4]],['Functions and graphs',[5]],['Calculus',[6,7]],['Trigonometry',[8]]],
+ phy:[['Waves and optics',[0,1,2]],['Mechanics',[3,4,5]],['Thermal physics',[6]],['Electricity and magnetism',[7,8]],['Atomic and nuclear physics',[9]]],
+ che:[['Atomic structure and bonding',[0,1]],['Quantitative chemistry',[2]],['Inorganic chemistry',[3]],['Organic chemistry',[4,5,6]],['Physical chemistry',[7,8]],['Redox chemistry',[9]]],
+ bio:[['Cellular biology',[0,1,2,3]],['Genetics',[4,5]],['Organism biology',[6,7,8]],['Ecology and the environment',[9]]],
+ ict:[['Computer systems',[0,1]],['Application software',[2,3,4]],['Computers in society',[5]]],
+ eco:[['Basic economic concepts',[0]],['Markets',[1]],['Money and inflation',[2,3]],['International trade and payments',[4]],['Economic functions of government',[5,6]],['Economic development',[7]]],
+ acc:[['Conceptual basis',[0]],['Accounting process',[1,2]],['Accounting reports',[3,4]],['Analysis and decisions',[5]],['Accounting systems',[6,7]]],
+ geo:[['Geography skills',[0]],['Natural hazards',[1]],['Resources',[2]],['Population',[3]],['Urbanisation',[4]],['Tourism',[5]]],
+ his:[['History skills',[0]],['Compulsory: the search for security, 1945–1990',[1]],['Options (choose two)',[2,3,4,5,6]]]
+};
+
 // ---------- topic page: quiz + flashcards ----------
 VIEWS.topic = function(v, a){
   var s=SUBJECTS[a[0]], t=s.topics[a[1]]; setTitle(t.t);
-  var h='<div class="card notes">'+t.notes+'</div>';
+  var ST=STRANDS[a[0]], sn=''; if(ST) ST.forEach(function(g,k){ if(g[1].indexOf(a[1])>=0) sn='Strand '+(k+1)+': '+g[0]; });
+  var tmp=document.createElement('div'); tmp.innerHTML=t.notes; var hs=tmp.querySelectorAll('h3');
+  if(hs.length>=3){ var toc='<div class="toc"><b>In this topic</b>'; hs.forEach(function(e,k){ e.id='sec'+k; toc+='<a href="javascript:void(0)" onclick="document.getElementById(\'sec'+k+'\').scrollIntoView({behavior:\'smooth\'})">'+e.textContent+'</a>'; }); toc+='</div>'; tmp.insertAdjacentHTML('afterbegin',toc); }
+  var h=(sn?'<div class="strandtag">'+esc(sn)+'</div>':'')+'<div class="card notes">'+tmp.innerHTML+'</div>';
   if(t.quiz&&t.quiz.length){
     h+='<button class="btn gold wide" onclick="show(\'quiz\',[\''+a[0]+'\','+a[1]+'])">'+L('startQuiz')+' ('+t.quiz.length+' questions) ›</button>';
     h+='<button class="btn ghost wide" onclick="show(\'flash\',[\''+a[0]+'\','+a[1]+'])">🃏 Flashcards</button>';
