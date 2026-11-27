@@ -6,7 +6,7 @@ var SHEETS = {
   che: {title:'Periodic Table (given in the exam)', imgs:['periodic-1'], wide:true}
 };
 var WRONG = load('wrong', {});
-(function(){ var V={phy:1,che:1}, done=load('restruct',{}), sc=load('scores',{}), w=load('wrong',{}), ch=false;
+(function(){ var V={phy:1,che:1,bio:1}, done=load('restruct',{}), sc=load('scores',{}), w=load('wrong',{}), ch=false;
   if(load('phy19',0)===1&&!done.phy) done.phy=1;
   Object.keys(V).forEach(function(id){ if((done[id]||0)<V[id]){ Object.keys(sc).forEach(function(k){ if(k.indexOf(id+'|')===0) delete sc[k]; }); Object.keys(w).forEach(function(k){ if(k.indexOf(id+'|')===0) delete w[k]; }); done[id]=V[id]; ch=true; } });
   if(ch){ save('scores',sc); save('wrong',w); save('restruct',done); WRONG=w; if(typeof SC!=='undefined') SC=sc; } })();   // key "subj|t|i" -> 1
@@ -56,7 +56,7 @@ var STRANDS={
  mat:[['Algebra',[0,1]],['Coordinate geometry',[2]],['Sequences and series',[3]],['Statistics and probability',[4]],['Functions and graphs',[5]],['Calculus',[6,7]],['Trigonometry',[8]]],
  phy:[['Light and waves (Topics 1–4)',[0,1,2,3]],['Mechanics (Topics 5–12)',[4,5,6,7,8,9,10,11]],['Gases and kinetic theory (Topic 13)',[12]],['Electricity and magnetism (Topics 14–18)',[13,14,15,16,17]],['The atom and radioactivity (Topic 19)',[18]]],
  che:[['I. Atomic structure and bonding (15%)',[0,1,2]],['II. Quantitative chemistry (20%)',[3,4,5,6]],['III. Organic chemistry (28%)',[7,8,9,10,11,12,13]],['IV. Inorganic chemistry (10%)',[14,15]],['V. Principles of physical chemistry (17%)',[16,17,18,19]],['VI. Oxidation and reduction (10%)',[20,21]]],
- bio:[['Cellular biology',[0,1,2,3]],['Genetics',[4,5]],['Organism biology',[6,7,8]],['Ecology and the environment',[9]]],
+ bio:[['I. Cellular biology (20%)',[0,1,2,3,4]],['II. Genetics (15%)',[5,6,7,8]],['III. Organism level biology (35%)',[9,10,11,12,13,14,15,16]],['IV. Environmental biology (20%)',[17,18,19,20,21]]],
  ict:[['Computer systems',[0,1]],['Application software',[2,3,4]],['Computers in society',[5]]],
  eco:[['Basic economic concepts',[0]],['Markets',[1]],['Money and inflation',[2,3]],['International trade and payments',[4]],['Economic functions of government',[5,6]],['Economic development',[7]]],
  acc:[['Section I – Conceptual basis of accounting (10–15%)',[0]],['Section II – Processing (15–20%)',[1,2]],['Section III – Accounting systems (25–30%)',[6,7]],['Section IV – Accounting reports (25–30%)',[3,4]],['Section V – Analysis, interpretation and decisions (10–12%)',[5]]],
