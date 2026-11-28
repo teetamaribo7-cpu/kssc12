@@ -318,5 +318,61 @@ secs:[
 {n:'11–15',q:'KE of 77 kg at 9.8 m/s; gas cooled at constant V; power; heat in resistor; motor effect',a:'11 <b>C</b> ½ × 77 × 9.8² = 3698 J\n12 <b>A</b> pressure decreases. ⚠ The MOE scheme says B (increases), which is wrong.\n13 <b>A</b> · 14 <b>D</b> I²Rt = 0.25 × 100 × 20 = 500 J · 15 <b>C</b> force'},
 {n:'16–20',q:'Wire in horseshoe magnet; unit of charge; distance halved; Rutherford; Ru-94 → Mo-90',a:'16 <b>D</b> (use the left-hand rule on the diagram) · 17 <b>A</b> coulombs · 18 <b>C</b> four times · 19 <b>C</b> positive nucleus · 20 <b>B</b> α-particle (94 − 90 = 4, 44 − 42 = 2)'}
 ]}
+]},
+{y:2022, src:'P2022/KSSC Physics 2022.pdf', note:'Worked solutions, checked against the MOE marking scheme. ⚠ marks the scheme\'s mistakes. g = 10 m/s².',
+secs:[
+{t:'Q1 – Mirrors and lenses', qs:[
+{n:'1a.',q:'Shadows; plane mirror image; lateral inversion',a:'(i) Light travels in <b>straight lines</b>. An opaque object blocks the light, leaving a dark area behind it where light cannot reach – the shadow.\n(ii) Draw two rays from the object reflecting with i = r; extend them back (dashed) to meet behind the mirror – the image is the same distance behind as the object is in front.\n(iii) Left and right are swapped in the image (like writing appearing backwards).'},
+{n:'1b.',q:'Concave mirror f = 4.0 cm, object 1.5 cm at 5 cm',a:'(i) <b>Real</b> (object between F and C).\n(ii) 1/v = 1/f − 1/u = 1/4 − 1/5 = 1/20 → <b>v = 20.0 cm</b>\n(iii) M = v/u = 20/5 = 4 → hᵢ = 4 × 1.5 = <b>6.0 cm</b> (inverted, magnified)'},
+{n:'1c.',q:'Object beyond 2F of a converging lens; then a diverging lens',a:'(i) Ray parallel to the axis → refracts through F′; ray through the optical centre P → straight on. Image between F′ and 2F′: real, inverted, smaller.\n(ii) Diverging lens: size <b>diminished</b>; nature <b>virtual and upright</b> (on the same side as the object).\n⚠ The MOE scheme says "real/inverted"; a diverging lens always gives a virtual, upright image, so that is wrong.'}
+]},
+{t:'Q2 – Refraction and waves', qs:[
+{n:'2a.',q:'Glass → air; critical angle (n = 1.52)',a:'(i) <b>Away from</b> the normal – light speeds up in the less dense air, so it changes direction.\n(ii) sin θc = 1.00/1.52 = 0.658 → <b>θc = 41.1°</b>'},
+{n:'2b.',q:'Average displacement; sound in metal; 8 waves in 5 s; speed',a:'(i) Particles oscillate equally either side of their rest position, so on average they don\'t move away from it.\n(ii) Particles in a metal are closer and more tightly bonded, so vibrations pass on faster.\n(iii) f = 8/5 = <b>1.6 Hz</b>\n(iv) v = fλ = 1.6 × 0.25 = <b>0.40 m/s</b>'},
+{n:'2c.',q:'Dispersion order; corpuscular model failure; deep → shallow',a:'(i) Blue, <b>green</b>, <b>yellow</b> (shorter wavelength bends more).\n(ii) It predicted light travels <b>faster</b> in water/glass, but it is measured slower; it also cannot explain interference (e.g. Young\'s double-slit bright and dark fringes).\n(iii) In shallow water the waves slow down: draw the wavefronts <b>closer together</b> (shorter λ), bending towards the normal if the boundary is at an angle.'}
+]},
+{t:'Q3 – Interference and s–t graph', qs:[
+{n:'3a.',q:'Diffraction; path difference at W; W and X',a:'(i) Most noticeable when the <b>gap in the barrier</b> is about the same size as the <b>wavelength</b>.\n(ii) Path difference = 5λ − 3.5λ = <b>1.5λ</b>\n(iii) W = <b>cancellation</b> (half-wavelength difference); X = <b>reinforcement</b>.'},
+{n:'3b.',q:'λ = 5.8×10⁻⁶ m, d = 0.05 mm, L = 2.5 m',a:'(i) 3rd dark fringe: d sin θ = (3 − ½)λ → sin θ = 2.5 × 5.8×10⁻⁶ / 5×10⁻⁵ = 0.29 → <b>θ = 16.9°</b>\n(ii) Δx = λL/d = 5.8×10⁻⁶ × 2.5 / 5×10⁻⁵ = <b>0.29 m</b>\n⚠ The MOE scheme gives 0.58 m, which is double the correct value.'},
+{n:'3c.',q:'Truck s–t graph',a:'(i) <b>Velocity</b>.\n(ii) <b>Stationary</b> (constant displacement of 15 m).\n(iii) The truck is 5 m on the <b>opposite side</b> of its starting point.\n(iv) v = Δs/Δt = (−5 − 15)/(20 − 10) = <b>−2.00 m/s</b>\n(v) It is moving in the <b>opposite (negative) direction</b> – back towards and past the start.'}
+]},
+{t:'Q4 – Kinematics, vectors, torque', qs:[
+{n:'4a.',q:'a = 3.00 m/s², u = 5.00 m/s',a:'(i) t = (v − u)/a = (22.4 − 5.00)/3.00 = <b>5.80 s</b>\n(ii) s = ut + ½at² = 5 × 10 + ½ × 3 × 100 = <b>200 m</b>'},
+{n:'4b.',q:'Vectors; B − A; shortcut x',a:'(i) Any two of: acceleration, displacement, velocity, weight.\n(ii) B − A = B + (−A): reverse the arrow of A, join its tail to the head of B; R goes from the tail of B to the head of −A.\n(iii) cos 40° = 13/x → x = 13/cos 40° = <b>17.0 m</b>'},
+{n:'4c.',q:'Newton\'s 1st law; metre rule pivoted at 30 cm',a:'(i) An object stays at rest or keeps moving at constant velocity unless an unbalanced (net) force acts on it.\n(ii) Clockwise = anticlockwise: 12 × (0.9 − 0.3) = F × (0.3 − 0.1) → 7.2 = 0.2F → <b>F = 36 N</b>'}
+]},
+{t:'Q5 – Forces, momentum, projectiles', qs:[
+{n:'5a.',q:'Zero net force; net force on cylinder',a:'(i) At rest, or moving at constant velocity.\n(ii) Horizontal: 227 − 162 = 65 N right. Vertical: both 55 N forces point down = 110 N down.\nF = √(65² + 110²) = √16 325 = <b>127.8 N</b> (59.4° below the horizontal)'},
+{n:'5b.',q:'Momentum; tennis ball 0.02 kg, 9.00 → −12.0 m/s; force in 0.02 s',a:'(i) p = mv, unit kg m/s.\n(ii) Take the return direction as +: Δp = 0.02 × 12 − 0.02 × (−9) = 0.24 + 0.18 = <b>0.42 kg m/s</b>\n(iii) F = Δp/Δt = 0.42/0.02 = <b>21 N</b>'},
+{n:'5c.',q:'Projectile 40.0 m/s at 50°',a:'(i) Constant horizontal velocity (no horizontal force); constant vertical acceleration g downwards (path is a parabola).\n(ii) vₓ = 40 cos 50° = <b>25.7 m/s</b>; vᵧ = 40 sin 50° = <b>30.6 m/s</b>\n(iii) 0 = 30.6 − 10t → <b>t = 3.06 s</b>'}
+]},
+{t:'Q6 – Circular motion and gases', qs:[
+{n:'6a.',q:'Centripetal force; propeller tips',a:'(i) 1. <b>towards the centre</b> 2. <b>gravitational attraction</b>\n(ii) a = v²/r = 285²/0.95 = <b>85 500 m/s²</b>\n(iii) F = ma = 18.0 × 85 500 = <b>1.54×10⁶ N</b>'},
+{n:'6b.',q:'T/F; conversions; Boyle; pressure law; moles',a:'(i) 1. <b>F</b> (P is inversely proportional to V) 2. <b>T</b>\n(ii) 532 K = <b>259 °C</b>; 161 °C = <b>434 K</b>\n(iii) P₁ = P₂V₂/V₁ = 50.0 × 2.40/200 = <b>0.60 Pa</b>\n(iv) T₂ = T₁P₂/P₁ = 300 × 500/50 = <b>3000 K</b>\n(v) n = PV/RT = (12.0×10⁵ × 0.250)/(8.31 × 293) = 3.0×10⁵/2435 = <b>123 mol</b>\n⚠ The MOE scheme gives 2435 mol, which is just RT, not n.'}
+]},
+{t:'Q7 – Energy', qs:[
+{n:'7a.',q:'Falling coconut; stone 0.4 kg at 0.55 m; KE at 12.5 m/s',a:'(i) 1. F 2. T\n(ii) Eₚ = mgh = 0.4 × 10 × 0.55 = <b>2.2 J</b>\n(iii) Eₖ = ½mv² = ½ × 0.4 × 12.5² = <b>31.25 J</b>'},
+{n:'7b.',q:'Spring graph; energy stored to 3.0 m',a:'(i) Plot (0,0), (1.5, 40), (3.0, 80), (4.5, 120) – a straight line through the origin.\n(ii) E = area under the graph = ½Fx = ½ × 80 × 3.0 = <b>120 J</b> (k = 26.7 N/m)'},
+{n:'7c.',q:'Effects of heating; no temperature change during change of state; mass; latent heat',a:'(i) Temperature rises / it expands / it changes state.\n(ii) The heat energy is used to <b>break the bonds</b> between particles (increasing potential energy), not to increase their kinetic energy, so temperature stays the same.\n(iii) m = Q/(cΔT) = 2 566 200/(4200 × 94) = <b>6.50 kg</b>\n(iv) Q = mL = 6.50 × 2 260 000 = <b>1.47×10⁷ J</b> (14 690 kJ)\n⚠ The MOE scheme writes 14 690 J; the unit should be kJ.'}
+]},
+{t:'Q8 – Electricity', qs:[
+{n:'8a.',q:'Cause of current; temperature; potentials; directions',a:'(i) A potential difference (voltage) across it pushes the charges (electrons).\n(ii) Resistance <b>increases</b>.\n(iii) 1. higher 2. lower\n(iv) Conventional current: + to −. Electron flow: − to +.'},
+{n:'8b.',q:'V–I graph; resistance',a:'(i) Voltage on the y-axis, current on the x-axis – a straight line through the origin.\n(ii) R = gradient = 5.69/0.60 ≈ <b>9.5 Ω</b>'},
+{n:'8c.',q:'2 Ω ∥ 3 Ω, in series with 4 Ω, 12 V',a:'(i) 1/Rₚ = 1/2 + 1/3 → Rₚ = 1.2 Ω; total = 1.2 + 4 = <b>5.2 Ω</b>\n(ii) I = 12/5.2 = <b>2.31 A</b>\n(iii) V = 2.31 × 4 = <b>9.23 V</b>'}
+]},
+{t:'Q9 – Magnetism and induction', qs:[
+{n:'9a.',q:'Motor effect; force on AB',a:'(i) A <b>force</b>.\n(ii) <b>perpendicular</b>\n(iii) F = BIL = 0.25 × 5.5 × 0.080 = <b>0.11 N</b>'},
+{n:'9b.',q:'Field around wires; B at P; force between wires',a:'(i) Concentric circles around each wire; direction by the right-hand grip rule (thumb = current).\n(ii) B = kI/r = 2×10⁻⁷ × 4.2/0.10 = <b>8.4×10⁻⁶ T</b>\n(iii) F = kI₁I₂L/d = 2×10⁻⁷ × 4.2 × 4.2 × 1.0/0.15 = <b>2.35×10⁻⁵ N</b> (repulsive – opposite currents)'},
+{n:'9c.',q:'Rod 0.20 m, 30 Ω, B = 3.0×10⁻³ T, v = 3.50 m/s',a:'(i) The rod cuts magnetic field lines, so the free electrons in it feel a force – an emf is induced and current flows in the closed circuit.\n(ii) V = BLv = 3.0×10⁻³ × 0.20 × 3.50 = <b>2.1×10⁻³ V</b>\n(iii) I = V/R = 0.0021/30 = <b>7.0×10⁻⁵ A</b>\n(iv) DC gives a constant field; a transformer needs a <b>changing</b> magnetic field to induce voltage in the secondary coil.'}
+]},
+{t:'Q10 – Electric fields and the atom', qs:[
+{n:'10a.',q:'4.5 V across 0.5 m nichrome',a:'(i) E = V/d = 4.5/0.5 = <b>9.0 V/m</b>\n(ii) The field is uniform, so the force is <b>constant</b> all along the wire: F = Eq.\n(iii) W = Eqd → d = 10.8×10⁻²⁰/(9.0 × 1.6×10⁻¹⁹) = <b>0.075 m</b>'},
+{n:'10b.',q:'Rutherford; neutrons',a:'(i) Repulsion between the positive α-particles and the positive <b>nucleus</b>.\n(ii) The atom is mostly <b>empty space</b> with a tiny, dense, positive nucleus.\n(iii) Neutrons = mass number − atomic number: A = <b>24</b>, B = <b>26</b> (scheme values – read them from the nuclide symbols in the paper).'},
+{n:'10c.',q:'Th-230 decay; half-life',a:'(i) ²³⁰₉₀Th → ²²⁶₈₈Ra + <b>⁴₂He</b> (Ra is radium.)\n(ii) 60 → 30 → 15 mg = 2 half-lives in 3.0 h → half-life = <b>1.5 h</b>\n(iii) 6.0 h = 4 half-lives → 60/2⁴ = <b>3.75 mg</b>'}
+]},
+{t:'Section B – Multiple choice', qs:[
+{n:'1–10',q:'',a:'1 <b>A</b> · 2 <b>C</b> half height · 3 <b>B</b> · 4 <b>B</b> fringes closer · 5 <b>A</b> · 6 <b>D</b> v = 2.5 × 40 = 100 m/s · 7 <b>D</b> 2500 × 55 = 137 500 · 8 <b>A</b> · 9 <b>C</b> · 10 <b>D</b>'},
+{n:'11–20',q:'',a:'11 <b>C</b> 350 × 1.5 = 525 J · 12 <b>B</b> · 13 <b>C</b> · 14 <b>D</b> R = P/I² = 600/4 = 150 Ω · 15 <b>B</b> commutator · 16 <b>A</b> · 17 <b>D</b> · 18 <b>A</b> E ∝ 1/r²: 9×10⁴/9 = 1.0×10⁴ · 19 <b>C</b> · 20 <b>B</b> α < β < γ'}
+]}
 ]}
 ]});
