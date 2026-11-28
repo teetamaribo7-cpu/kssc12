@@ -57,10 +57,10 @@ var STRANDS={
  phy:[['Light and waves (Topics 1–4)',[0,1,2,3]],['Mechanics (Topics 5–12)',[4,5,6,7,8,9,10,11]],['Gases and kinetic theory (Topic 13)',[12]],['Electricity and magnetism (Topics 14–18)',[13,14,15,16,17]],['The atom and radioactivity (Topic 19)',[18]]],
  che:[['I. Atomic structure and bonding (15%)',[0,1,2]],['II. Quantitative chemistry (20%)',[3,4,5,6]],['III. Organic chemistry (28%)',[7,8,9,10,11,12,13]],['IV. Inorganic chemistry (10%)',[14,15]],['V. Principles of physical chemistry (17%)',[16,17,18,19]],['VI. Oxidation and reduction (10%)',[20,21]]],
  bio:[['I. Cellular biology (20%)',[0,1,2,3,4]],['II. Genetics (15%)',[5,6,7,8]],['III. Organism level biology (35%)',[9,10,11,12,13,14,15,16]],['IV. Environmental biology (20%)',[17,18,19,20,21]]],
- ict:[['Computer systems',[0,1]],['Application software',[2,3,4]],['Computers in society',[5]]],
+ ict:[['Topic 1: Desktop computer systems and management (50%)',[0,1,5]],['Topic 2: Using PC applications (50%)',[2,3,4]]],
  eco:[['Basic economic concepts',[0]],['Markets',[1]],['Money and inflation',[2,3]],['International trade and payments',[4]],['Economic functions of government',[5,6]],['Economic development',[7]]],
  acc:[['Section I – Conceptual basis of accounting (10–15%)',[0]],['Section II – Processing (15–20%)',[1,2]],['Section III – Accounting systems (25–30%)',[6,7]],['Section IV – Accounting reports (25–30%)',[3,4]],['Section V – Analysis, interpretation and decisions (10–12%)',[5]]],
- geo:[['Geography skills',[0]],['Natural hazards',[1]],['Resources',[2]],['Population',[3]],['Urbanisation',[4]],['Tourism',[5]]],
+ geo:[['Geography skills',[0]],['Section A: Living with natural hazards',[1]],['Section B: Use and management of water resources',[2]],['Section C: Consequences of population growth',[3]],['Section D: Urbanisation and urban environments',[4]],['Section E: Geographic perspectives on tourism',[5]]],
  his:[['History skills',[0]],['Compulsory: the search for security, 1945–1990',[1]],['Options (choose two)',[2,3,4,5,6]]]
 };
 
