@@ -126,5 +126,40 @@ secs:[
 {n:'c(i).',q:'Sort products by name, ascending',a:'<b>SELECT * FROM Products\nORDER BY ProductName ASC;</b>'},
 {n:'c(ii).',q:'Resulting Product_ID order',a:'Banana, Cabbage, Cucumber, Orange → <b>13, 11, 12, 14</b>'}
 ]}
+]},
+{y:2023, src:'P2023/COMPUTER STUDIES EXAM 2023.pdf', note:'Worked answers. No MOE marking scheme was published for this paper, so these were prepared from the prescription and checked against the figures in the paper.',
+secs:[
+{t:'Section A – Multiple choice', qs:[
+{n:'1–5',q:'Motherboard; input device; speaker; projector; OS functions',a:'1 <b>d</b> motherboard · 2 <b>c</b> keyboard · 3 <b>a</b> speaker · 4 <b>b</b> projector · 5 <b>b</b> five (process, memory, device and file management, plus the user interface/security)'},
+{n:'6–10',q:'Inkjet; programming languages; corporate confidentiality; Tab; lossless compression',a:'6 <b>b</b> inkjet · 7 <b>d</b> COBOL and BASIC (the only pair that are both real languages) · 8 <b>a</b> sales information · 9 <b>a</b> Tab · 10 <b>c</b> zip'}
+]},
+{t:'Section B – Short answers', qs:[
+{n:'11–13.',q:'CPU roles; optional feature of a flash drive; device management',a:'11. The CPU is the "brain": it <b>fetches</b> instructions from memory, <b>decodes</b> them and <b>executes</b> them. The ALU does arithmetic and logic; the control unit directs data flow between memory, storage and devices.\n12. E.g. a <b>write-protect switch</b>, password/fingerprint encryption, or a key-ring loop/LED activity light.\n13. The OS controls all hardware devices using <b>drivers</b>: it detects new devices (plug and play), sends data to and from them, and shares them between programs (e.g. queues print jobs).'},
+{n:'14–16.',q:'Advantages of volatile memory; DTP; toolbar',a:'14. Volatile memory (RAM) is very <b>fast</b> to read and write, so programs run quickly; it is cleared when power is off, so it is free for new work each time and temporary data is not left behind.\n15. Desktop publishing (e.g. Publisher) combines text and graphics in flexible page layouts to make newsletters, posters, brochures, cards and magazines with professional design.\n16. A toolbar is a row of <b>icons/buttons</b> (e.g. Save, Print, Bold) that give one-click access to common commands instead of menus.'},
+{n:'17–18.',q:'Video conferencing and telecommuting; saving and backup',a:'17a. Video conferencing lets people hold meetings face-to-face over the internet (Zoom, Teams) – less travel time and cost, meetings across islands/countries, but it needs a good connection.\nb. Telecommuting means working from home using computers and the internet – flexible hours and no commute, but less social contact and harder supervision.\n18. Saving often prevents losing work if the power fails or the program crashes. Backups (USB, external drive, cloud) protect files from virus attack, theft, accidental deletion or hard-drive failure so they can be restored.'},
+{n:'19.',q:'Keyboard keys A, B, D',a:'A = <b>function keys (F1–F12)</b> – shortcuts for special tasks (F1 help, F5 refresh, F7 spell check).\nB = <b>numeric keypad</b> – fast entry of numbers and calculations (Num Lock on).\nD = <b>Ctrl/Alt (modifier) keys</b> – used together with other keys for shortcuts, e.g. Ctrl+C copy, Ctrl+S save.'}
+]},
+{t:'Section C – Report to the school board', qs:[
+{n:'20.',q:'50–80 word recommendation using the specification',a:'Model report (about 75 words):\nI recommend the board buys these computers. The Intel Core i5/i7 or Apple M1/M2 <b>processor</b> is fast enough for all school work. <b>8–16 GB RAM</b> lets students run several programs smoothly. The <b>240 GB SSD</b> starts quickly and stores plenty of work. <b>Windows 10/11 with free Office 365</b> gives students the software they need at no extra cost. Built-in <b>Wi-Fi, webcam and headphones</b> support online learning. These machines will serve the lab well for years.'}
+]},
+{t:'Section D – Word processing', qs:[
+{n:'21–22.',q:'Thesaurus; key principles',a:'21. A tool that suggests words with similar (or opposite) meanings, e.g. right-click "big" → Synonyms → "large", "huge" (Shift+F7).\n22. Plan the document; type text without pressing Enter at the end of each line (word wrap); edit (insert, delete, copy, move); format text and paragraphs consistently; proofread with spell check; save regularly; preview before printing.'},
+{n:'23–24.',q:'Formats in "My Story"; merging table cells',a:'23(i) Title: <b>large font size, blue colour, centred</b> (a condensed heading font).\n(ii) Paragraph A: <b>italic</b> text (a narrow/condensed font).\n(iii) Paragraph B: a <b>paragraph border</b> (blue box) with <b>double line spacing</b>.\n24. Insert a row above the header row → select all the cells in that top row → right-click → <b>Merge Cells</b> (or Layout tab → Merge Cells) → type "GRANDFATHER\'S WEALTH" and centre it.'}
+]},
+{t:'Section E – Spreadsheet multiple choice', qs:[
+{n:'25–29',q:'Data types; key to go to column A; best use; referencing; lowest value',a:'25 <b>c</b> label, label, value, formula (Tax deducted is calculated by a formula) · 26 <b>d</b> Home · 27 <b>a</b> · 28 <b>b</b> relative and absolute · 29 <b>c</b> MIN'}
+]},
+{t:'Section F – Spreadsheet short answers', qs:[
+{n:'30–32.',q:'Data integrity; landscape; renaming a sheet',a:'30. Use <b>data validation</b> (e.g. only whole numbers 0–1000 in "Number of items"), or protect/lock formula cells so they can\'t be changed by mistake.\n31. Landscape is wider, so all the <b>columns fit on one page</b> without being cut off or split.\n32. Double-click the sheet tab (or right-click → Rename) → type the new name → press Enter.'},
+{n:'33–36.',q:'Betty Hardware formulas',a:'33. F16: <b>=COUNT(B4:B12)</b> → 9 (or =COUNTA(A4:A12)).\n34. E12: <b>=D12*$F$2</b> (F2 holds 25%). If F2 holds the number 25, use =D12*$F$2/100. → $978.00\n35. C16: <b>=MAX(D4:D12)</b> → $6 048.00\n36. G4: <b>=IF(F4>$F$17,"Over","Under")</b> → "Under" (765 < 800). The $ signs keep F17 fixed when the formula is copied down.'}
+]},
+{t:'Section G – Database multiple choice', qs:[
+{n:'37–41',q:'Rows; not a data type; long date; not a database; integrity',a:'37 <b>b</b> records · 38 <b>b</b> "value" is not a data type · 39 <b>b</b> Thursday, 12 November 2015 · 40 <b>d</b> Google Sheets (a spreadsheet) · 41 <b>c</b> data entry errors'}
+]},
+{t:'Section H – Database short answers', qs:[
+{n:'42–44.',q:'Advantages for a school; input controls; SQL clauses',a:'42. All student and staff records are stored in one place; quick searching, sorting and reports (e.g. all Form 6 students); less duplication; data can be shared and kept secure with passwords.\n43. Input controls (validation rules, input masks, drop-down lists, required fields) stop wrong entries, e.g. Gender is a Yes/No tick box so it can only be Male or Female, or Date of Birth must be a valid date – so data stays consistent.\n44. SELECT – chooses which <b>fields</b> to show. FROM – names the <b>table</b> the data comes from. WHERE – sets the <b>condition/criteria</b> records must meet.'},
+{n:'45–47.',q:'Table name; Gender data type; query for males',a:'45. <b>Employees</b>\n46. <b>Yes/No</b> (Boolean): ticked = male, unticked = female.\n47. SELECT [Employee #], Firstname, Surname, Gender\nFROM Employees\nWHERE Gender = Yes;\n(In design view: tick Show for each field and type Yes in the Criteria row of Gender.)'},
+{n:'48–49.',q:'Query design for RC Head Teacher; sort order',a:'48. In the <b>Criteria</b> row type <b>"RC"</b> under Religion and <b>"Head Teacher"</b> under Responsibility, on the <b>same row</b> (AND). Leave Show ticked for all fields.\n49. Sorted by <b>Date of Birth in descending order</b> (youngest/latest date first: 1984 → 1975).'}
+]}
 ]}
 ]});
