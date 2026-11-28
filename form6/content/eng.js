@@ -105,5 +105,24 @@ secs:[
 {t:'Section III – Response to texts (2 × 20 marks)', qs:[
 {n:'26–31.',q:'Answer two questions (A or B), using a different text for each',a:'Always name the <b>title and author</b> in the first sentence. Answer the exact question using its key words in your topic sentences.\nStructure: introduction (title, author, your main idea) → 2–3 body paragraphs, each with a point, a <b>quotation/example</b> and an explanation of how it shows the point → conclusion linking back to the question.\nE.g. 26A (theme through the protagonist): name the protagonist; show how their choices, struggles and change over the novel reveal the theme; quote key moments.\n29B (personification): explain that giving human qualities to objects helps readers feel and picture ideas; quote one example from each of two poems and explain the effect.\nMarks: Content 8 · Structure 4 · Expression 4 · Mechanics 4.'}
 ]}
+]},
+{y:2022, src:'P2022/KSSC English 2022.pdf', note:'Model answers based on the MOE marking scheme. Essays are given as plans: write 200–300 words with a clear introduction, body paragraphs and conclusion.',
+secs:[
+{t:'Passage 1 – World Peace in One Hour', qs:[
+{n:'1–6',q:'Multiple choice',a:'1 <b>D</b> lack of action · 2 <b>D</b> the small chance (window) of peace happening · 3 <b>C</b> coronavirus (COVID-19) · 4 <b>A</b> everyone · 5 <b>B</b> a nurse · 6 <b>D</b> International World Peace'},
+{n:'7–10.',q:'Short answers',a:'7. If we waste this chance and only talk instead of acting to bring peace, then humans are useless and have no right to survive.\n8. Any two: protecting all species; sustaining life on Earth; exploring outer space; tackling disease; solving pollution; electing more women leaders; creating real freedom.\n9. Recent war: <b>Russia–Ukraine</b>. Explanation: just as the Spanish flu helped end WWI, COVID-19 showed that the whole world must unite against a common enemy; leaders should move money and effort from war to fighting the pandemic and helping the vulnerable.\n10. Repetition: "<b>We are all in it</b>." Message: peace is everyone\'s job – from truck drivers to presidents; we must work together as one.'}
+]},
+{t:'Passages 2–5', qs:[
+{n:'11–13.',q:'"We Wear the Mask" (Dunbar)',a:'11. The mask is a false happy face: people smile and hide their pain, suffering and true feelings from the world.\n12. The world thinks it is wise but is fooled – it sees only the smiles, not the tears and sighs behind them. Quote: "Why should the world be over-wise, / In counting all our tears and sighs?"\n13. Apostrophe: "O great Christ, our cries / To thee from tortured souls arise" – the speaker addresses Christ directly.'},
+{n:'14–17.',q:'Cartoon: global warming',a:'14. <b>Global warming / climate change</b>.\n15. The G-8 leaders are shown riding a snail: their action to cut emissions is <b>dangerously slow</b>, while small island nations suffer the consequences now.\n16. Sea-level rise (coastal erosion and flooding of atolls like Kiribati), melting ice, extinction of wildlife.\n17. To cut greenhouse-gas emissions by <b>50% by 2050</b>.'},
+{n:'18–21.',q:'Sale advertisement',a:'18. <b>One week</b> (7 days).\n19. The big discount seems to apply to everything but only applies to some items ("up to …% off") – quote the phrase from the advert.\n20. <b>Internet / online</b> (a website).\n21. "<b>Don\'t miss it</b>"; "<b>Shop now!</b>"'},
+{n:'22–25.',q:'Aid graph',a:'22. <b>US$632.46 million</b>.\n23. <b>Samoa</b>.\n24. <b>10 years</b>.\n25. China is using aid and loans to gain friends and power in the Pacific region, competing with countries such as Australia and the USA.'}
+]},
+{t:'Section II – Essay (20 marks)', qs:[
+{n:'26.',q:'200–300 words on one topic',a:'Plan for topic 5 ("Protect the trees and they will protect you"):\nIntro – trees are vital to life on our islands.\nP1 – trees protect the coast: mangroves and pandanus roots slow erosion and storm surges.\nP2 – they give food (coconut, breadfruit, pandanus), shade, medicine and building materials.\nP3 – they clean the air, store carbon and cool the climate; cutting them causes erosion and heat.\nConclusion – plant and protect trees; call to action.\nMarks: Content 8 · Structure 4 · Expression 4 · Mechanics 4.'}
+]},
+{t:'Section III – Response to texts', qs:[
+{n:'27–32.',q:'Two essays, different texts',a:'Name the <b>title and author</b> first. Use the question\'s key words (e.g. "betrayal", "cliffhanger", "camera techniques") in every topic sentence.\nEach body paragraph: point → quote/example → explain how it shows the point → link to the question (and to your own society/life if asked, e.g. 29A, 32A).\nE.g. 31B: name two techniques (close-up shows emotion; long shot shows setting/isolation), give a scene for each, and explain what each helped you understand.\nMarks: Content 8 · Structure 4 · Expression 4 · Mechanics 4.'}
+]}
 ]}
 ]});
