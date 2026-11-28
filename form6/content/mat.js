@@ -240,5 +240,54 @@ secs:[
 {n:'10B.',q:'∫₁² (3x² + 2x − 1) dx',a:'[x³ + x² − x]₁² = (8 + 4 − 2) − (1 + 1 − 1) = 10 − 1 = <b>9</b>'},
 {n:'10C.',q:'Area between y = x and y = x²',a:'They meet at x = 0 and x = 1, and y = x is on top.\nA = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = ½ − ⅓ = <b>1/6 unit²</b>'}
 ]}
+]},
+{y:2022, src:'P2022/KSSC Mathematics 2022.pdf', note:'Full worked solutions. The MOE marking scheme for this year is handwritten; these answers were worked out and checked independently.',
+secs:[
+{t:'Section A – Multiple choice', qs:[
+{n:'1–5',q:'',a:'1 <b>c</b> (2²)⁴ⁿ × 2ⁿ = 2⁸ⁿ⁺ⁿ = 2⁹ⁿ\n2 <b>b</b> √(1² + 4²) = √17\n3 <b>d</b> 3(x + 1) ≤ 2(x − 4) → x ≤ −11\n4 <b>a</b> (x − 1)(x + 1)/(x − 1) = x + 1 → 2\n5 <b>d</b> arc = rθ = 12 × π/3 = 4π'},
+{n:'6–10',q:'',a:'6 <b>a</b> y = 2/x + 2: x = 0, y = 2\n7 <b>a</b> S₅₀ = 25(2×2 + 49×3) = 3775\n8 <b>c</b> 30 × 0.3 = 9\n9 <b>c</b> slope of K = −1/3: (y − 8)/(2 − 5) = −1/3 → y = 9\n10 <b>c</b> f(−1) = −1 − 1 + 2 + 4 = 4'},
+{n:'11–15',q:'',a:'11 <b>b</b> x² − 6x + 8 = 0 → x = (6 ± √4)/2\n12 <b>c</b> terms 3n (strictly the top limit should be 20, since 3 × 20 = 60)\n13 <b>c</b> negative cubic touching the axis at a (double root) and crossing at b\n14 <b>d</b> y = 3 − 5x⁻¹ → dy/dx = 5/x²\n15 <b>c</b> area below the axis must be made positive: ∫₂³ f dx + |∫₀² f dx|'},
+{n:'16–20',q:'',a:'16 <b>c</b> 1.28\n17 <b>a</b> 36.86° (this works if sin θ = 3/5 – the printed 4/5 appears to be a misprint, since all the options are based on 36.86°)\n18 <b>c</b> sin θ = ½ → π/6\n19 <b>b</b> 2b = a + c\n20 <b>c</b> 0.4641 ↔ z = 1.8 → d = 20 + 1.8 × 4 = 27.2'}
+]},
+{t:'Q1 – Algebra', qs:[
+{n:'1A.',q:'Simplify (x² − 49)/(x² − 5x − 14)',a:'= (x − 7)(x + 7)/[(x − 7)(x + 2)] = <b>(x + 7)/(x + 2)</b>'},
+{n:'1B.',q:'(i) 2/(2 − x) = (x + 1)/(1 − x) (ii) 8ˣ = ¼ (iii) 2x² − 4x + 2 = 0',a:'(i) 2(1 − x) = (x + 1)(2 − x) → 2 − 2x = −x² + x + 2 → x² − 3x = 0 → <b>x = 0 or x = 3</b>\n(ii) 2³ˣ = 2⁻² → <b>x = −2/3</b>\n(iii) 2(x − 1)² = 0 → <b>x = 1</b>'},
+{n:'1C.',q:'(25x²a⁴)^½ × x^¾ ÷ √(16a)',a:'= 5xa² × x^¾ ÷ 4a^½ = <b>(5/4) x^(7/4) a^(3/2)</b>'}
+]},
+{t:'Q2 – Algebra', qs:[
+{n:'2A.',q:'3x/2 = y(x + 4)/5, make x the subject',a:'15x = 2y(x + 4) = 2xy + 8y → 15x − 2xy = 8y → x(15 − 2y) = 8y → <b>x = 8y/(15 − 2y)</b>'},
+{n:'2B.',q:'x² + y = 4 and y − 2x = −4',a:'y = 2x − 4 → x² + 2x − 4 = 4 → x² + 2x − 8 = 0 → (x + 4)(x − 2) = 0\n<b>(2, 0)</b> and <b>(−4, −12)</b>'},
+{n:'2C–D.',q:'Factorise x³ − 5x² − 2x + 24; 2x(x + y)² − 4(x + y)²',a:'C. f(−2) = −8 − 20 + 4 + 24 = 0 → (x + 2) is a factor. Divide: x² − 7x + 12 = (x − 3)(x − 4) → <b>(x + 2)(x − 3)(x − 4)</b>\nD. <b>2(x + y)²(x − 2)</b>'}
+]},
+{t:'Q3 – Circle', qs:[
+{n:'3.',q:'x² + y² − 10x + 6y + 30 = 0',a:'(i)–(ii) Complete the square: (x − 5)² − 25 + (y + 3)² − 9 + 30 = 0 → <b>(x − 5)² + (y + 3)² = 4</b>; centre <b>(5, −3)</b>\n(iii) x = 4: 1 + (y + 3)² = 4 → y = −3 ± √3 → <b>y = −1.27 or −4.73</b>\n(iv) <b>r = 2</b>'}
+]},
+{t:'Q4 – Sequences', qs:[
+{n:'4A–B.',q:'AP with a = log₂27, d = log₂x; sum of first 50 even numbers',a:'A. T₄ = a + 3d = log₂27 + 3log₂x = log₂27 + log₂x³ = <b>log₂(27x³)</b>\nB. 2 + 4 + … + 100 = (50/2)(2 + 100) = <b>2550</b>'},
+{n:'4C.',q:'GP: T₃ = 324, T₆ = 96',a:'(i) r³ = 96/324 = 8/27 → <b>r = 2/3</b>\n(ii) a = 324 ÷ (2/3)² = 729; S₁₅ = 729(1 − (2/3)¹⁵)/(1 − 2/3) = 2187(1 − 0.00228) = <b>2182.0</b>'}
+]},
+{t:'Q5 – Probability', qs:[
+{n:'5A.',q:'Sugar: μ = 25.8, σ = 0.5; P(25.5 < X < 26.5)',a:'z₁ = (25.5 − 25.8)/0.5 = −0.6; z₂ = (26.5 − 25.8)/0.5 = 1.4\nP = 0.2257 + 0.4192 = <b>0.6449</b>'},
+{n:'5B.',q:'Two buses: P(late) 0.1 and 0.3',a:'(i) Tree: 1st bus L 0.1 / N 0.9; each branch then L 0.3 / N 0.7.\n(ii) P(at least one late) = 1 − P(neither) = 1 − 0.9 × 0.7 = <b>0.37</b>'}
+]},
+{t:'Q6 – Functions', qs:[
+{n:'6A.',q:'Sketch f(x) = (2x + 3)/(x − 1)',a:'f(x) = 2 + 5/(x − 1): vertical asymptote <b>x = 1</b>, horizontal asymptote <b>y = 2</b>; x-intercept −1.5; y-intercept −3. Two branches: top-right and bottom-left of the asymptotes.'},
+{n:'6B.',q:'g(x) = √(x + 1)',a:'(i) Domain <b>x ≥ −1</b> (ii) Range <b>y ≥ 0</b>\n(iii) y = √(x + 1) → x = y² − 1 → <b>m(x) = x² − 1, x ≥ 0</b>\n(iv) Right half of the parabola y = x² − 1, starting at (0, −1) – the reflection of g in y = x.\n(If the function is read as √x + 1: domain x ≥ 0, range y ≥ 1, inverse (x − 1)², x ≥ 1.)'}
+]},
+{t:'Q7 – Calculus', qs:[
+{n:'7A.',q:'g(x) = 2x³ + kx² − 5x + 6; tangent at x = −2 parallel to 2y − 17x − 1 = 0',a:'(i) g′(x) = <b>6x² + 2kx − 5</b>\n(ii) Line: y = 8.5x + 0.5, slope 8.5. g′(−2) = 24 − 4k − 5 = 8.5 → <b>k = 2.625</b> (21/8)\n(iii) g(−2) = −16 + 4k + 10 + 6 = 4k = <b>10.5</b>'},
+{n:'7B.',q:'s = 2t³ − t² − 5',a:'(i) s(0) = −5 → initially <b>5 m</b> from A (on the negative side).\n(ii) v = ds/dt = 6t² − 2t = 2t(3t − 1) = 0 → <b>t = 0 s and t = ⅓ s</b>'}
+]},
+{t:'Q8 – Trigonometry', qs:[
+{n:'8A–B.',q:'Prove cot θ / csc θ = cos θ; solve 2cos θ = sin θ',a:'A. (cos θ/sin θ) ÷ (1/sin θ) = cos θ/sin θ × sin θ = cos θ ✔\nB. tan θ = 2 → θ = <b>63.4°</b> or 180° + 63.4° = <b>243.4°</b>'},
+{n:'8C.',q:'Boats 24 m apart, elevations 20° and 34°',a:'Let d = distance of the nearer boat. h = d tan 34° = (d + 24) tan 20°\nd(0.6745 − 0.3640) = 24 × 0.3640 → d = 8.735/0.3105 = <b>28.1 m</b> (ii)\nh = 28.13 × tan 34° = <b>19.0 m</b> (i)'}
+]},
+{t:'Q9 – Mixed', qs:[
+{n:'9A–D.',q:'Σn³ (n = 1 to 5); z-score; 8π/6; y = 2ˣ',a:'A. 1³ + 2³ + 3³ + 4³ + 5³ = 1 + 8 + 27 + 64 + 125 = <b>225</b>\nB. z = (1.9 − 2.3)/0.2 = <b>−2</b>\nC. 8π/6 × 180/π = <b>240°</b>\nD. Exponential curve through (0, 1), (1, 2), (2, 4), (3, 8), (−1, 0.5); approaches y = 0 for negative x.'},
+{n:'9E.',q:'Circle radius 9 cm, angle ODC = 35°',a:'(i) OC = OD (radii) → angle OCD = 35°, so angle COD = 180 − 70 = 110° → angle AOC = 180 − 110 = <b>70°</b>\n(ii) Shaded segment = sector − triangle = (70/360)π(9²) − ½(9²) sin 70° = 49.48 − 38.06 = <b>11.4 cm²</b>'}
+]},
+{t:'Q10 – Area between curves', qs:[
+{n:'10.',q:'y = x² and y = x + 6',a:'(i) Gradient 1 → tan θ = 1 → <b>45°</b>\n(ii) x² = x + 6 → (x − 3)(x + 2) = 0 → <b>(−2, 4) and (3, 9)</b>\n(iii) Shaded from x = 0 to x = 3 (line above the parabola): ∫₀³ (x + 6 − x²) dx = [x²/2 + 6x − x³/3]₀³ = 4.5 + 18 − 9 = <b>13.5 units²</b>\n(If the small region from x = 3 to x = 5 is also shaded: ∫₃⁵ (x² − x − 6) dx = 12.67, total 26.2 units².)'}
+]}
 ]}
 ]});
