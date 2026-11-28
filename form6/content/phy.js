@@ -259,5 +259,64 @@ secs:[
 {n:'19.',q:'Neutrons in uranium-238 (Z = 92)',a:'238 − 92 = <b>146 → C</b>'},
 {n:'20.',q:'Beta decay of Cs-137',a:'<b>A</b>: ¹³⁷₅₅Cs → ⁰₋₁e + ¹³⁷₅₆Ba (the mass number stays the same and the atomic number goes up by 1).'}
 ]}
+]},
+{y:2023, src:'P2023/PHYSICS EXAM 2023.pdf', note:'Worked solutions, checked against the MOE marking scheme. ⚠ marks the scheme\'s mistakes. g = 10 m/s² unless the question needs 9.8.',
+secs:[
+{t:'Q1 – Mirrors and lenses', qs:[
+{n:'1a(i).',q:'Two things needed (besides space and a screen) to see a shadow',a:'A <b>light source</b> and an <b>opaque object</b> to block the light.'},
+{n:'1a(ii).',q:'Ray diagram for the image in a plane mirror',a:'Draw two rays from the box to the mirror; reflect each with i = r. Extend the reflected rays backwards (dashed) behind the mirror – they meet at the image, the same distance behind the mirror as the box is in front.'},
+{n:'1b.',q:'Concave mirror, object beyond C: rays, nature of image; then convex mirror',a:'(i) Ray parallel to the axis → reflects through F; ray through C → reflects back on itself. They meet between C and F: image <b>inverted, smaller</b>.\n(ii) <b>Real</b>.\n(iii) Convex mirror: image <b>smaller (diminished)</b>, <b>virtual and upright</b>.'},
+{n:'1c.',q:'Convex lens f = 10.5 cm, object 7.8 cm. Image distance, height (object 3.2 cm), nature',a:'(i) 1/v = 1/f − 1/u = 1/10.5 − 1/7.8 = −0.0330 → <b>v = −30.3 cm</b>\n(ii) hᵢ = hₒ × |v|/u = 3.2 × 30.3/7.8 = <b>12.4 cm</b>\n(iii) <b>Virtual</b> (v negative; object inside F – magnifying glass).'}
+]},
+{t:'Q2 – Refraction and waves', qs:[
+{n:'2a.',q:'Glass → air refraction; critical angle',a:'(i) The ray bends <b>away from the normal</b> as it leaves the glass.\n(ii) The critical angle is the angle of incidence (in the denser medium) for which the angle of refraction is <b>90°</b>. Condition: light must travel from a denser to a less dense medium.'},
+{n:'2b.',q:'Sound wave; amplitude; deep-water wavefronts; λ for 8 waves in 12 s at 0.6 m/s',a:'(i) <b>sound wave</b>\n(ii) Amplitude = maximum displacement of a particle from its rest position.\n(iii) In deep water the waves travel faster, so draw the wavefronts <b>further apart</b> (longer λ), same frequency.\n(iv) f = 8/12 = 0.667 Hz → λ = v/f = 0.6/0.667 = <b>0.9 m</b>'},
+{n:'2c.',q:'Failures of the corpuscular model; dual nature; diffraction at boundary B',a:'(i) It could not explain <b>diffraction and interference</b>, and it predicted light travels <b>faster</b> in water (actually slower).\n(ii) Light behaves as a <b>wave</b> (interference, diffraction) and as <b>particles (photons)</b> (photoelectric effect, solar cells).\n(iii) The waves diffract again through the gap in B, spreading out as curved wavefronts with the same wavelength.'}
+]},
+{t:'Q3 – Interference and motion graphs', qs:[
+{n:'3a.',q:'Overlapping diffraction patterns; superposed pulses; coherent; path difference',a:'(i) <b>Interference</b>\n(ii) At full overlap add the heights of S and T (superposition).\n(iii) Coherent = same frequency (wavelength) and a <b>constant phase difference</b>.\n(iv) <b>constructive</b>; <b>destructive</b>'},
+{n:'3b.',q:'d = 4 mm, λ = 400 nm, Δx = 1 mm. Find L; new λ when Δx = 1.25 mm',a:'(i) L = dΔx/λ = (4×10⁻³ × 1×10⁻³)/(400×10⁻⁹) = <b>10 m</b>\n(ii) λ = dΔx/L = (4×10⁻³ × 1.25×10⁻³)/10 = <b>5×10⁻⁷ m = 500 nm</b>'},
+{n:'3c.',q:'v–t graph: gradient; 6–9 s; displacement 3–9 s; average vs instantaneous velocity',a:'(i) <b>Acceleration</b>\n(ii) <b>Constant velocity</b> (12 m/s)\n(iii) Area 3–6 s: ½(9 + 12) × 3 = 31.5; 6–9 s: 12 × 3 = 36 → <b>67.5 m</b>\n(iv) Average velocity = total displacement ÷ total time; instantaneous velocity = velocity at one instant (gradient of the tangent).'}
+]},
+{t:'Q4 – Kinematics, vectors, Newton\'s 2nd law', qs:[
+{n:'4a.',q:'u = 3.0 m/s, a = 0.5 m/s², 10 s; velocity at 15 s',a:'(i) s = ut + ½at² = 30 + ½(0.5)(100) = <b>55 m</b>\n(ii) v = u + at = 3 + 0.5 × 15 = <b>10.5 m/s</b>'},
+{n:'4b.',q:'Scalar/vector; K = 6, M = 15 at right angles: size and direction of R',a:'(i) Scalar: time or speed. Vector: acceleration or displacement.\n(ii) R = √(6² + 15²) = √261 = <b>16.2 m/s</b>\n(iii) θ = tan⁻¹(15/6) = <b>68.2°</b> from K (= 21.8° from M).'},
+{n:'4c.',q:'Newton\'s 2nd law; gradient of F vs a graph',a:'(i) The acceleration of a body is proportional to the net force and inversely proportional to its mass: <b>F = ma</b>.\n(ii) Gradient = <b>mass</b>, unit kg.\n(iii) Gradient = 30 N ÷ 6 m/s² = <b>5 kg</b>'}
+]},
+{t:'Q5 – Torque, momentum, projectiles', qs:[
+{n:'5a.',q:'Equilibrium; seesaw 130 N at 2.3 m, Tinga at 2.5 m',a:'(i) No net force and no net torque: the body stays at rest or keeps a constant velocity.\n(ii) 130 × 2.3 = W × 2.5 → W = 299/2.5 = <b>120 N</b>'},
+{n:'5b.',q:'Conservation; 4.2 kg at 4.5 m/s E + 3.8 kg at 5.5 m/s S, stick together',a:'(i) momentum is <b>conserved</b> in a collision or <b>explosion</b>.\n(ii) p_E = 18.9, p_S = 20.9 → p = √(18.9² + 20.9²) = <b>28.2 kg m/s</b> (47.9° S of E)\n(iii) v = 28.2/(4.2 + 3.8) = <b>3.5 m/s</b>'},
+{n:'5c.',q:'Ball: vᵧ = 9.50, vₓ = 12.5 m/s. Arrows; time to top; max height',a:'(i) Acceleration at S: arrow straight <b>down</b>. Vertical velocity at T: arrow pointing <b>down</b>.\n(ii) 0 = 9.5 − 10t → <b>t = 0.95 s</b>\n(iii) h = vᵧ²/2g = 90.25/20 = <b>4.5 m</b>'}
+]},
+{t:'Q6 – Circular motion and gases', qs:[
+{n:'6a.',q:'Why accelerating; centripetal force; r = 0.65 m, T = 10 s',a:'(i) Its <b>direction keeps changing</b>, so its velocity changes.\n(ii) It pulls the car <b>towards the centre</b>, keeping it on the circle.\n(iii) v = 2πr/T = 2π(0.65)/10 = <b>0.41 m/s</b>\n(iv) a = v²/r = 0.408²/0.65 = <b>0.26 m/s²</b>'},
+{n:'6b.',q:'T/F; P↑ at constant T; T↓ at constant V; conversions; Charles; PV = nRT',a:'(i) 1. T  2. T\n(ii) 1. Volume <b>decreases</b>. 2. Pressure <b>decreases</b>.\n(iii) 583.2 + 273 = <b>856.2 K</b>; 1476.9 − 273 = <b>1203.9 °C</b>\n(iv) V₂ = 1.30 × 176/299 = <b>0.765 L</b>\n(v) T = PV/nR = 1.84 × 12.0/(0.539 × 0.0821) = <b>499 K</b>'}
+]},
+{t:'Q7 – Work, energy, heat', qs:[
+{n:'7a.',q:'W = 403 J over 2.70 m; then 150 N at 42°; effect of angle',a:'(i) F = W/s = 403/2.70 = <b>149 N</b>\n(ii) s = W/(F cos θ) = 403/(150 cos 42°) = <b>3.6 m</b>\n(iii) 1. Angle decreases → work <b>increases</b>. 2. Angle increases → work <b>decreases</b>.'},
+{n:'7b.',q:'0.51 kg stone falls 3.70 m',a:'(i) Eₚ = mgh = 0.51 × 9.8 × 3.70 = <b>18.5 J</b>\n(ii) v = √(2gh) = √(2 × 9.8 × 3.70) = <b>8.52 m/s</b>\n⚠ The MOE scheme uses g = 10 (18.9 J and 8.60 m/s), which does not give the 8.52 m/s the question asks you to show. Use g = 9.8 here.\n(iii) Height decreases so GPE decreases; that energy changes into kinetic energy, so speed increases.'},
+{n:'7c.',q:'Elastic collision; heat vs temperature; water cooling',a:'(i) Both momentum and kinetic energy are conserved.\n(ii) Heat = energy transferred because of a temperature difference (J); temperature = measure of average kinetic energy of particles (°C/K).\n(iii) ΔT = Q/mc = 991 200/(7.6 × 4200) = 31.05 → T = 95 − 31.05 = <b>64 °C</b>'}
+]},
+{t:'Q8 – Electricity', qs:[
+{n:'8a.',q:'Good/bad conductors; T/F',a:'(i) Good: many <b>free electrons</b>. Bad: few or no free electrons.\n(ii) 1. T  2. F (resistance increases with temperature).'},
+{n:'8b.',q:'emf; power; kettle 240 V 45 Ω; TV 1.5 A 150 Ω',a:'(i) emf = energy given to each coulomb of charge; power = energy transferred per second.\n(ii) Kettle P = V²/R = 240²/45 = <b>1280 W</b>; TV P = I²R = 1.5² × 150 = <b>337.5 W</b>'},
+{n:'8c.',q:'5 Ω, two 6 Ω in parallel, 7 Ω; 24 V',a:'(i) 6 ∥ 6 = 3 Ω; total = 5 + 3 + 7 = <b>15 Ω</b>\n(ii) I = 24/15 = <b>1.6 A</b>\n(iii) V across the parallel pair = 1.6 × 3 = <b>4.8 V</b>'}
+]},
+{t:'Q9 – Magnetism and induction', qs:[
+{n:'9a.',q:'Galvanometer; commutator; F on 10 cm side',a:'(i) Detects/measures small currents.\n(ii) Reverses the current every half turn so the coil keeps turning the same way.\n(iii) F = BIL = 0.32 × 6.9 × 0.10 = <b>0.22 N</b>'},
+{n:'9b.',q:'Dots/crosses; B at 8 cm from 3.9 A; force between 1.5 m wires 25 m apart',a:'(i) Dots: <b>out of the page</b>. Crosses: <b>into the page</b>.\n(ii) B = 2×10⁻⁷ I/r = 2×10⁻⁷ × 3.9/0.08 = <b>9.75×10⁻⁶ T</b>\n(iii) F = 2×10⁻⁷ × 3.9 × 3.9 × 1.5/25 = <b>1.8×10⁻⁷ N</b> (attractive – same direction)'},
+{n:'9c.',q:'Rod pushed through a field: resistance force; emf; changes',a:'(i) The induced current in the rod is in the field, so it feels a force that <b>opposes the motion</b> (Lenz\'s law).\n(ii) emf = BLv = 0.30 × 0.22 × 2.5 = <b>0.165 V</b>\n(iii) 1. Decreases. 2. Increases.'}
+]},
+{t:'Q10 – Electric fields and radioactivity', qs:[
+{n:'10a.',q:'Plates 55 mm apart, 12 V, charge 0.25 µC',a:'(i) Parallel straight lines from + plate to − plate, arrows from + to −.\n(ii) E = V/d = 12/0.055 = <b>218 V/m</b>\n(iii) F = qE = 0.25×10⁻⁶ × 218 = <b>54.5 µN</b>'},
+{n:'10b.',q:'Medical use; danger',a:'(i) Radiotherapy to kill cancer cells, sterilising equipment, or tracers.\n(ii) Radiation damages cells/DNA → cancer; radioactive waste and accidents/fallout.'},
+{n:'10c.',q:'²³⁷₉₃A, ²³⁸₉₂M, ²³⁵₉₁I, ²³⁴₉₀T; half-life 4 h from 160 mg',a:'(i) A: 237 − 93 = <b>144</b>; I: 235 − 91 = <b>144</b>\n⚠ The MOE scheme gives I = 145, which is wrong.\n(ii) <b>M</b> (²³⁸₉₂M − ⁴₂He = ²³⁴₉₀T)\n(iii) 160 → 80 → 40 → 20 → 10 → 5 = 5 half-lives × 4 h = <b>20 h</b>\n(iv) 28 h = 7 half-lives → 160/2⁷ = <b>1.25 mg</b>'}
+]},
+{t:'Section B – Multiple choice', qs:[
+{n:'1–5',q:'f and R; TIR; fails particle theory; fringe halved; s–t gradient',a:'1 <b>B</b> f = R/2 · 2 <b>D</b> · 3 <b>C</b> (MOE) – strictly, diffraction/interference are the real failures · 4 <b>B</b> d doubles · 5 <b>B</b> velocity'},
+{n:'6–10',q:'6 km there and back; momentum; free fall; Earth/Moon weight; change of state',a:'6 <b>C</b> 0 · 7 <b>B</b> 45 000/60 = 750 kg · 8 <b>D</b> constant · 9 <b>A</b> 65 × 9.8 = 637 N, 65 × 1.63 = 106 N · 10 <b>A</b> heat'},
+{n:'11–15',q:'KE of 77 kg at 9.8 m/s; gas cooled at constant V; power; heat in resistor; motor effect',a:'11 <b>C</b> ½ × 77 × 9.8² = 3698 J\n12 <b>A</b> pressure decreases. ⚠ The MOE scheme says B (increases), which is wrong.\n13 <b>A</b> · 14 <b>D</b> I²Rt = 0.25 × 100 × 20 = 500 J · 15 <b>C</b> force'},
+{n:'16–20',q:'Wire in horseshoe magnet; unit of charge; distance halved; Rutherford; Ru-94 → Mo-90',a:'16 <b>D</b> (use the left-hand rule on the diagram) · 17 <b>A</b> coulombs · 18 <b>C</b> four times · 19 <b>C</b> positive nucleus · 20 <b>B</b> α-particle (94 − 90 = 4, 44 − 42 = 2)'}
+]}
 ]}
 ]});
