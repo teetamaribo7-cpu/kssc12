@@ -289,5 +289,48 @@ secs:[
 {t:'Q10 – Area between curves', qs:[
 {n:'10.',q:'y = x² and y = x + 6',a:'(i) Gradient 1 → tan θ = 1 → <b>45°</b>\n(ii) x² = x + 6 → (x − 3)(x + 2) = 0 → <b>(−2, 4) and (3, 9)</b>\n(iii) Shaded from x = 0 to x = 3 (line above the parabola): ∫₀³ (x + 6 − x²) dx = [x²/2 + 6x − x³/3]₀³ = 4.5 + 18 − 9 = <b>13.5 units²</b>\n(If the small region from x = 3 to x = 5 is also shaded: ∫₃⁵ (x² − x − 6) dx = 12.67, total 26.2 units².)'}
 ]}
+]},
+{y:2021, src:'P2021/KSSC Mathematics 2021.pdf', note:'Full worked solutions. No MOE marking scheme was published for this year, so every answer was worked out and checked independently.',
+secs:[
+{t:'Section A – Multiple choice', qs:[
+{n:'1–5',q:'',a:'1 <b>d</b> 2⁵ = 32 · 2 <b>c</b> both y-values are 0 → slope 0 · 3 <b>d</b> −x/2 ≥ 8 → x ≤ −16 · 4 <b>b</b> 2(x − 3)/(x − 3) = 2 · 5 <b>d</b> 340 × π/180 = 17π/9'},
+{n:'6–10',q:'',a:'6 <b>b</b> (4, 1) – right 4, up 1 · 7 <b>c</b> 2, 4, 6, 8 is arithmetic · 8 <b>d</b> (34 − 28)/4 = 1.5 · 9 <b>b</b> given line slope −2, so the perpendicular slope is ½: 2y − x = 2 · 10 <b>b</b> x(x − 1)/[2(x − 1)] = x/2'},
+{n:'11–15',q:'',a:'11 <b>c</b> 2(x² − 5x − 6) = 2(x − 6)(x + 1)\n12 <b>none fits</b>: Σ(i + 2) for i = 2 to 4 = 4 + 5 + 6 = 15 (or Σi + 2 = 11) – check the printed limits with your teacher\n13 <b>a</b> x = ½ (denominator 0), y = ½ (ratio of x-coefficients)\n14 <b>c</b> x² + 1\n15 <b>c</b> [x³/3 + 2x]₁² = (8/3 + 4) − (1/3 + 2) = 13/3'},
+{n:'16–20',q:'',a:'16 <b>b</b> P(x < 6) must be 0.5, not 0.95 (by symmetry P(x > 10) = 0.15, P(4 < x < 6) = 0.35, P(4 < x < 10) = 0.7)\n17 <b>c</b> A = sin⁻¹(a sin B / b)\n18 <b>b</b> 12-16-20 triangle\n19 <b>c</b> tₙ = a + (n − 1)d (= 4n − 1)\n20 <b>a</b> above 18 (μ + 2σ) is 2.5%, but below 9 (μ − σ) is 16%, so a is not correct'}
+]},
+{t:'Q1–Q2 – Algebra', qs:[
+{n:'1A–B.',q:'Simplify; solve 2/(2 − x) = (x + 1)/(1 − x); log(x + 2) + log x = log 24; x³ + 2x² − x − 2 = 0',a:'A. (x − 7)(x + 7)/[(x − 7)(x + 2)] = <b>(x + 7)/(x + 2)</b>\nB(i) 2(1 − x) = (x + 1)(2 − x) → x² − 3x = 0 → <b>x = 0 or 3</b>\n(ii) log[x(x + 2)] = log 24 → x² + 2x − 24 = 0 → (x + 6)(x − 4) = 0 → <b>x = 4</b> (x = −6 is rejected – you can\'t take the log of a negative)\n(iii) x²(x + 2) − (x + 2) = (x + 2)(x − 1)(x + 1) = 0 → <b>x = −2, −1, 1</b>'},
+{n:'1C.',q:'(3x²y)³ ÷ 4x³y⁻²',a:'= 27x⁶y³ ÷ 4x³y⁻² = <b>(27/4) x³ y⁵</b>'},
+{n:'2.',q:'Rearrange; simultaneous; factor theorem; factorise 1/y² − 1/x²',a:'A. 15x = 2xy + 8y → <b>x = 8y/(15 − 2y)</b>\nB. y = 2x − 4 → x² + 2x − 8 = 0 → <b>(2, 0) and (−4, −12)</b>\nC. f(5) = 250 − 125 − 140 + 15 = 0, so (x − 5) is a factor. f(x) = (x − 5)(2x² + 5x − 3) = <b>(x − 5)(2x − 1)(x + 3)</b>\nD. (x² − y²)/(x²y²) = <b>(x − y)(x + y)/(x²y²)</b>'}
+]},
+{t:'Q3 – Coordinate geometry', qs:[
+{n:'3.',q:'Line 2x − 3y − 6 = 0 is a diameter; A on the x-axis, B on the y-axis',a:'A = (3, 0); B = (0, −2).\nI. Gradient = (0 − (−2))/(3 − 0) = <b>2/3</b>\nII. Centre = midpoint of AB = <b>(1.5, −1)</b>\nIII. Diameter = √(3² + 2²) = √13 = <b>3.61 units</b>\nIV. r² = 13/4 → <b>(x − 1.5)² + (y + 1)² = 3.25</b>'}
+]},
+{t:'Q4 – Sequences', qs:[
+{n:'4.',q:'Next terms; AP sum; common difference; infinite GP; 10th term',a:'A. d = 2.3 → <b>12.9, 15.2</b>\nB. S₂₃ = (23/2)(−19 + 33) = <b>161</b>\nC. d = −n − (−5n) = <b>4n</b>\nD. S∞ = a/(1 − r) = −9/(1 − 5/8) = −9/(3/8) = <b>−24</b>\nE. r = 2 → T₁₀ = −¼ × 2⁹ = <b>−128</b>'}
+]},
+{t:'Q5 – Probability', qs:[
+{n:'5A.',q:'Ice cream: μ = 20 g, σ = 0.6 g; cones hold 21.1 g',a:'I. z = (21.1 − 20)/0.6 = 1.83 → P(X > 21.1) = 0.5 − 0.4664 = <b>0.0336</b>\nII. 80 × 0.0336 = 2.7 → about <b>3 cones</b>'},
+{n:'5B.',q:'5 yellow, 3 blue, two drawn without replacement',a:'I. Tree: Y 5/8 → (Y 4/7, B 3/7); B 3/8 → (Y 5/7, B 2/7).\nP(same colour) = (5/8)(4/7) + (3/8)(2/7) = 20/56 + 6/56 = <b>13/28</b>\nII. P(second is yellow) = (5/8)(4/7) + (3/8)(5/7) = 35/56 = <b>5/8</b>'}
+]},
+{t:'Q6 – Graphs', qs:[
+{n:'6A.',q:'Sketch f(x) = x³ − x² + 6x',a:'As printed: f(x) = x(x² − x + 6); x² − x + 6 has no real roots, so the only x-intercept is (0, 0); f′(x) = 3x² − 2x + 6 > 0, so the curve always rises (no turning points).\n(If the question meant x³ − x² − 6x = x(x − 3)(x + 2): intercepts at −2, 0, 3, with a maximum near x = −1.1 and a minimum near x = 1.8 – this fits the grid given.)'},
+{n:'6B.',q:'g(x) = 4ˣ',a:'I. y-intercept <b>(0, 1)</b>\nII. Domain: <b>all real x</b>\nIII. Range: <b>y > 0</b>\nIV. y = 4ˣ + 3: the same shape moved up 3 – passes through (0, 4) and (1, 7); horizontal asymptote <b>y = 3</b>.'}
+]},
+{t:'Q7 – Calculus', qs:[
+{n:'7A.',q:'g(x) = 3 + x² − 2x³',a:'I. g′(x) = <b>2x − 6x²</b>\nII. g′(1) = 2 − 6 = <b>−4</b>\nIII. g(1) = 2; normal slope = ¼ → y − 2 = ¼(x − 1) → <b>4y = x + 7</b>'},
+{n:'7B.',q:'h = 20t − 5t²',a:'I. v = dh/dt = <b>20 − 10t</b>\nII. v = 0 → <b>t = 2 s</b> (maximum height h = 40 − 20 = 20 m)'}
+]},
+{t:'Q8 – Trigonometry', qs:[
+{n:'8A–B.',q:'sin θ cot θ = cos θ; 3cos θ = ½',a:'A. sin θ × (cos θ/sin θ) = cos θ ✔\nB. cos θ = 1/6 → θ = <b>80.4°</b> or 360 − 80.4 = <b>279.6°</b>'},
+{n:'8C–D.',q:'Boats on bearings 70° (30 km) and 140° (50 km); triangle area 38 cm²',a:'C. Angle between the paths = 140 − 70 = 70°. d² = 30² + 50² − 2(30)(50)cos 70° = 3400 − 1026 = 2374 → <b>d = 48.7 km</b>\nD. ½ × 9 × 14 × sin B = 38 → sin B = 38/63 = 0.603 → <b>B = 37.1°</b>'}
+]},
+{t:'Q9 – Mixed', qs:[
+{n:'9A–D.',q:'Sigma; normal area; radians; sketch line',a:'A. 5 + 8 + 11 + 14 = <b>Σ (3n + 2), n = 1 to 4</b>\nB. P(−1.2 < z < 1.8) = 0.3849 + 0.4641 = <b>0.8490</b>\nC. 315.5 × π/180 = <b>5.51 rad</b>\nD. 2x − 3y = −6 → intercepts (−3, 0) and (0, 2); join them with a straight line (gradient 2/3).'},
+{n:'9E.',q:'Sector area 160 m², radius 9 m',a:'I. A = ½r²θ → θ = 2 × 160/81 = 3.95 rad = <b>226.4°</b>\nII. Arc AB = rθ = 9 × 3.951 = <b>35.6 m</b>'}
+]},
+{t:'Q10 – Area', qs:[
+{n:'10.',q:'y = x² − 4x and line M through (0, 0) and (6, 12)',a:'I. ∫₀⁴ (x² − 4x) dx = [x³/3 − 2x²]₀⁴ = 64/3 − 32 = <b>−32/3</b> (the area is below the x-axis)\nII. M: gradient 12/6 = 2 → <b>y = 2x</b>\nIII. ∫₄⁶ (x² − 4x) dx = (72 − 72) − (64/3 − 32) = <b>32/3</b>\nIV. Area between them = ∫₀⁶ [2x − (x² − 4x)] dx = ∫₀⁶ (6x − x²) dx = [3x² − x³/3]₀⁶ = 108 − 72 = <b>36 units²</b>'}
+]}
 ]}
 ]});
